@@ -47,14 +47,14 @@ const Social = () => {
           </p>
         </div>
 
-        {/* Business Frog Image */}
+        {/* Business Frog Image - Vertical float with rotation */}
         <div className="flex justify-center mb-12 animate-scale-in">
           <div className="relative">
             <div className="absolute inset-0 bg-primary/30 blur-3xl animate-pulse" />
             <img
               src={peponkBusiness}
               alt="PEPONK Business"
-              className="relative w-64 h-64 object-cover rounded-full border-4 border-primary shadow-glow"
+              className="relative w-64 h-64 object-cover rounded-full border-4 border-primary shadow-glow logo-float-rotate"
             />
           </div>
         </div>

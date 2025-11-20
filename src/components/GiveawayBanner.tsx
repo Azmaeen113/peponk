@@ -4,9 +4,9 @@ import { Card } from "@/components/ui/card";
 
 const GiveawayBanner = () => {
   return (
-    <section className="py-20 bg-gradient-cool relative overflow-hidden">
-      {/* Animated gradient background overlay */}
-      <div className="absolute inset-0 bg-gradient-cool opacity-10" />
+    <section className="py-20 relative overflow-hidden">
+      {/* Smooth color-changing background slideshow */}
+      <div className="absolute inset-0 giveaway-color-slideshow" />
       
       {/* Floating icon animations */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -62,20 +62,35 @@ const GiveawayBanner = () => {
                 rel="noopener noreferrer"
                 className="relative rounded-xl overflow-hidden shadow-2xl group cursor-pointer block"
               >
-                <div className="aspect-video bg-gradient-to-br from-purple-700 to-cyan-600 flex items-center justify-center relative">
-                  {/* Gradient overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                <div
+                  className="aspect-video flex items-center justify-center relative"
+                  style={{
+                    backgroundImage: 'url("/3CF5C61E-7861-4667-B701-FBBCCEBC9B6D.jpeg")',
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                  }}
+                >
+                  {/* Dark overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent" />
                   
-                  {/* Animated background pattern */}
-                  <div className="absolute inset-0 opacity-20">
-                    <div className="absolute top-4 left-4 w-20 h-20 border-2 border-white/30 rounded-full animate-pulse" />
-                    <div className="absolute bottom-4 right-4 w-32 h-32 border-2 border-white/30 rounded-full animate-pulse" style={{ animationDelay: "0.5s" }} />
+                  {/* Subtle animated rings */}
+                  <div className="absolute inset-0 opacity-30">
+                    <div className="absolute top-6 left-6 w-24 h-24 border border-white/30 rounded-full animate-pulse" />
+                    <div className="absolute bottom-6 right-6 w-36 h-36 border border-white/30 rounded-full animate-pulse" style={{ animationDelay: "0.6s" }} />
                   </div>
                   
-                  {/* Play button */}
+                  {/* Play button - 100% transparent with thin black outline */}
                   <div className="relative z-10 group-hover:scale-110 transition-transform duration-300">
-                    <div className="bg-white/20 backdrop-blur-md rounded-full p-6 border-4 border-white/50 shadow-2xl">
-                      <Play className="w-16 h-16 text-white fill-white drop-shadow-lg ml-1" />
+                    <div className="bg-transparent rounded-full p-6 border border-black/80 shadow-none" style={{ borderWidth: '1.5px' }}>
+                      <svg 
+                        className="w-16 h-16 text-black fill-none stroke-black ml-1" 
+                        viewBox="0 0 24 24" 
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <polygon points="5 3 19 12 5 21 5 3" />
+                      </svg>
                     </div>
                   </div>
                   

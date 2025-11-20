@@ -44,12 +44,12 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="https://www.youtube.com/watch?v=xMHJGd3wwZk"
+                  href="https://x.com/i/communities/1988166536280813964"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white hover:text-primary transition-colors text-sm leading-relaxed hover:underline"
                 >
-                  Giveaway
+                  X Community
                 </a>
               </li>
             </ul>

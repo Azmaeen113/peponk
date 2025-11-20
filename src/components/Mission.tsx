@@ -35,14 +35,14 @@ const Mission = () => {
             </p>
           </div>
 
-          {/* Character Illustration */}
+          {/* Character Illustration - Spinning effect */}
           <div className="flex justify-center animate-scale-in">
             <div className="relative">
               <div className="absolute inset-0 bg-primary/20 rounded-full blur-2xl animate-glow" />
               <img
                 src={peponkLogo}
                 alt="PEPONK Logo"
-                className="relative w-full max-w-md animate-bounce drop-shadow-2xl"
+                className="relative w-full max-w-md logo-spin drop-shadow-2xl"
               />
             </div>
           </div>

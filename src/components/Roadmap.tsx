@@ -67,21 +67,13 @@ const Roadmap = () => {
   };
 
   return (
-    <section className="py-20 relative overflow-hidden" style={{ backgroundColor: '#33e7ff' }}>
+    <section className="py-20 relative overflow-hidden">
+      {/* Animated gradient background - Blue → Pink → Theme Colors */}
+      <div className="absolute inset-0 roadmap-gradient-animated" />
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-6xl font-bold mb-4">
-            <span 
-              className="bg-clip-text text-transparent drop-shadow-[0_2px_8px_rgba(0,0,0,0.2)]"
-              style={{
-                background: 'linear-gradient(to right, rgb(255, 107, 53), rgb(255, 217, 61), rgb(127, 217, 87))',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
-                backgroundClip: 'text',
-              }}
-            >
-              Roadmap
-            </span>
+          <h2 className="text-4xl md:text-6xl font-bold mb-4 text-black drop-shadow-[0_2px_8px_rgba(255,255,255,0.5)]">
+            Roadmap
           </h2>
           {/* Enhanced contrast for text on cyan background */}
           <p className="text-xl text-black font-semibold drop-shadow-[0_2px_4px_rgba(255,255,255,0.5)]">

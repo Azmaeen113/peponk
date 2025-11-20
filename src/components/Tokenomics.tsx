@@ -17,7 +17,7 @@ const Tokenomics = () => {
     },
     {
       title: "Liquidity Pool",
-      percentage: 30,
+      percentage: 29,
       // More vibrant golden yellow - increased saturation
       color: "hsl(45, 100%, 70%)", // Bright vibrant golden yellow
       icon: Lock,
@@ -29,7 +29,7 @@ const Tokenomics = () => {
     },
     {
       title: "Team & Development",
-      percentage: 20,
+      percentage: 11,
       // More vibrant orange-red - increased saturation
       color: "hsl(16, 100%, 62%)", // Bright vibrant orange-red #FF6B35
       icon: Rocket,
@@ -41,7 +41,7 @@ const Tokenomics = () => {
     },
     {
       title: "Marketing & Partnerships",
-      percentage: 10,
+      percentage: 15,
       // More vibrant cyan - increased saturation
       color: "hsl(187, 100%, 60%)", // Bright vibrant electric cyan
       icon: Megaphone,

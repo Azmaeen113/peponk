@@ -87,14 +87,14 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Character Image */}
+          {/* Character Image - Scale pulse animation */}
           <div className="flex-1 flex justify-center lg:justify-end animate-scale-in">
             <div className="relative">
               <div className="absolute inset-0 bg-secondary/30 rounded-full blur-3xl animate-pulse" />
               <img
                 src={peponkMain}
                 alt="PEPONK Character"
-                className="relative w-full max-w-md lg:max-w-lg animate-float drop-shadow-2xl"
+                className="relative w-full max-w-md lg:max-w-lg logo-pulse-scale drop-shadow-2xl"
               />
             </div>
           </div>
