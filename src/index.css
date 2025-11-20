@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 16%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 16%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 16%;
+
+    /* PEPONK Brand Colors - Enhanced for better saturation and contrast */
+    --primary: 16 100% 58%; /* More vibrant Orange #FF6B35 - increased saturation */
+    --primary-foreground: 0 0% 100%; /* Pure white for maximum contrast */
+    --primary-dark: 16 100% 48%; /* Darker Orange for depth */
+    
+    --secondary: 102 78% 65%; /* More vibrant Lime Green - increased saturation */
+    --secondary-foreground: 0 0% 10%; /* Deep dark #1a1a1a for contrast */
+    --secondary-dark: 102 78% 55%; /* Darker Green for depth */
+    
+    --accent: 45 100% 66%; /* More vibrant Sunny Yellow - increased saturation */
+    --accent-foreground: 0 0% 10%; /* Deep dark #1a1a1a for contrast */
+    --accent-dark: 45 100% 54%; /* Darker Yellow for depth */
+
+    /* Additional Colors - Enhanced for vibrancy */
+    --cyan: 187 100% 55%; /* More vibrant Electric Cyan */
+    --purple: 270 75% 68%; /* More vibrant Purple accent */
+    --charcoal: 0 0% 10%; /* Deep dark text #1a1a1a for better contrast */
+    --dark-bg: 0 0% 8%; /* Deeper background for better contrast */
+
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 40%; /* Darker for better contrast */
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 91%;
+    --input: 0 0% 91%;
+    --ring: 20 100% 55%;
+
+    --radius: 1rem;
+
+    /* Gradients */
+    --gradient-warm: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
+    --gradient-cool: linear-gradient(135deg, hsl(var(--purple)), hsl(var(--cyan)));
+    --gradient-vibrant: linear-gradient(135deg, hsl(var(--secondary)), hsl(var(--cyan)));
+    --gradient-hero: linear-gradient(180deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 100%);
+
+    /* Shadows & Effects */
+    --shadow-glow: 0 0 40px hsla(var(--primary), 0.3);
+    --shadow-glow-green: 0 0 30px hsla(var(--secondary), 0.4);
+    --shadow-elegant: 0 10px 40px -10px hsla(var(--primary), 0.25);
+  }
+
+  .dark {
+    --background: 0 0% 10%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 14%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 14%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 20 100% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 100 60% 60%;
+    --secondary-foreground: 0 0% 16%;
+
+    --accent: 45 100% 63%;
+    --accent-foreground: 0 0% 16%;
+
+    --muted: 0 0% 18%;
+    --muted-foreground: 0 0% 65%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 18%;
+    --input: 0 0% 18%;
+    --ring: 20 100% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-weight: 800;
+    letter-spacing: -0.02em; /* Tighter letter spacing for modern look */
+  }
+
+  /* Enhanced text contrast and readability */
+  p, li, span:not([class*="text-"]) {
+    line-height: 1.7; /* Improved line-height for body text (1.6-1.8) */
+  }
+  
+  /* Better contrast for text on dark backgrounds */
+  .dark p, .dark li, .dark span {
+    color: hsl(0 0% 98%); /* Near-white for dark backgrounds */
+  }
+  
+  /* Text shadows for hero text readability */
+  h1, h2 {
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Enhanced focus states for accessibility */
+  button:focus-visible,
+  a:focus-visible,
+  input:focus-visible,
+  textarea:focus-visible,
+  select:focus-visible {
+    outline: 2px solid hsl(var(--primary));
+    outline-offset: 2px;
+    border-radius: 0.375rem; /* 6px for buttons */
+  }
+
+  /* Consistent border-radius values */
+  .rounded-card {
+    border-radius: 0.5rem; /* 8px for cards */
+  }
+
+  .rounded-button {
+    border-radius: 0.375rem; /* 6px for buttons */
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
