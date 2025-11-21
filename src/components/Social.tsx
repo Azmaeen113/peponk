@@ -59,8 +59,8 @@ const Social = () => {
           </div>
         </div>
 
-        {/* Social Cards */}
-        <div className="grid md:grid-cols-3 gap-4 sm:gap-6 max-w-5xl mx-auto justify-items-center">
+        {/* Social Icons Row */}
+        <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-8 max-w-3xl mx-auto">
           {socials.map((social, index) => {
             const Icon = social.icon;
             return (
@@ -69,53 +69,24 @@ const Social = () => {
                 href={social.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block"
+                aria-label={social.name}
+                className="relative group"
+                style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <Card
-                  className="relative w-full max-w-sm bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md border-2 p-5 sm:p-6 lg:p-8 hover:scale-105 transition-all duration-300 animate-fade-in-up group cursor-pointer rounded-xl overflow-hidden shadow-[0_8px_24px_rgba(0,0,0,0.4)] hover:shadow-[0_12px_32px_rgba(0,0,0,0.5)] hover:-translate-y-2"
-                  style={{ 
-                    animationDelay: `${index * 0.1}s`,
-                    borderColor: `${social.color}60`, // More visible border
-                    boxShadow: `0 8px 24px rgba(0,0,0,0.4), 0 0 0 1px ${social.color}20`,
-                  }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.borderColor = social.color;
-                    e.currentTarget.style.boxShadow = `0 12px 32px rgba(0,0,0,0.5), 0 0 0 1px ${social.color}40, 0 0 40px ${social.color}40`;
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.borderColor = `${social.color}60`;
-                    e.currentTarget.style.boxShadow = `0 8px 24px rgba(0,0,0,0.4), 0 0 0 1px ${social.color}20`;
-                  }}
-                >
-                  {/* Glowing background on hover */}
-                  <div 
-                    className="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-20 transition-opacity duration-300 blur-xl pointer-events-none"
-                    style={{ backgroundColor: social.color }}
-                  />
-                  
-                  <div className="relative z-10">
-                    {/* More vibrant colored circle with glow and animation */}
-                    <div
-                      className="w-16 h-16 sm:w-20 sm:h-20 rounded-full flex items-center justify-center mb-5 mx-auto group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-lg group-hover:shadow-xl"
-                      style={{ 
-                        backgroundColor: social.color,
-                        boxShadow: `0 8px 24px ${social.color}60, 0 4px 12px ${social.color}40`,
-                      }}
-                    >
-                      <Icon className="w-10 h-10 text-white drop-shadow-lg" />
-                    </div>
-                    
-                    {/* Pure black text for high contrast */}
-                    <h3 className="text-xl sm:text-2xl font-bold text-center mb-2 text-black drop-shadow-sm group-hover:text-black transition-colors">
-                      {social.name}
-                    </h3>
-                    <p 
-                      className="text-center text-black group-hover:text-black transition-colors leading-relaxed font-medium text-sm sm:text-base"
-                    >
-                      {social.cta}
-                    </p>
+                <div className="flex flex-col items-center gap-2">
+                  <div
+                    className="w-14 h-14 sm:w-16 sm:h-16 rounded-full flex items-center justify-center shadow-[0_8px_24px_rgba(0,0,0,0.4)] hover:shadow-[0_12px_32px_rgba(0,0,0,0.5)] transition-all duration-300 hover:-translate-y-1 hover:scale-105"
+                    style={{ 
+                      backgroundColor: social.color,
+                      boxShadow: `0 8px 24px ${social.color}60, 0 4px 12px ${social.color}40`,
+                    }}
+                  >
+                    <Icon className="w-7 h-7 sm:w-8 sm:h-8 text-white drop-shadow-lg" />
                   </div>
-                </Card>
+                  <span className="text-sm font-semibold text-white/90">
+                    {social.name}
+                  </span>
+                </div>
               </a>
             );
           })}
