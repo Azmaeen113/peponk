@@ -75,7 +75,10 @@ const GiveawayBanner = () => {
                     <span>3:25</span>
                   </div>
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-32 h-20 bg-white rounded-3xl flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform">
+                    <div
+                      className="bg-white rounded-3xl flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform"
+                      style={{ width: "20%", height: "20%", minWidth: "3.5rem", minHeight: "2rem" }}
+                    >
                       <svg viewBox="0 0 24 24" className="w-24 h-24 fill-red-600">
                         <path d="M10 15.5V8.5L16 12L10 15.5Z" />
                       </svg>
