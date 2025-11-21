@@ -60,43 +60,29 @@ const GiveawayBanner = () => {
                 href="https://www.youtube.com/watch?v=xMHJGd3wwZk"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="relative rounded-xl overflow-hidden shadow-2xl group cursor-pointer block"
+                className="relative rounded-2xl overflow-hidden shadow-2xl group cursor-pointer block border border-black/10 bg-black"
               >
-                <div
-                  className="aspect-video flex items-center justify-center relative"
-                  style={{
-                    backgroundImage: 'url("/3CF5C61E-7861-4667-B701-FBBCCEBC9B6D.jpeg")',
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                  }}
-                >
-                  {/* Dark overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent" />
-                  
-                  {/* Subtle animated rings */}
-                  <div className="absolute inset-0 opacity-30">
-                    <div className="absolute top-6 left-6 w-24 h-24 border border-white/30 rounded-full animate-pulse" />
-                    <div className="absolute bottom-6 right-6 w-36 h-36 border border-white/30 rounded-full animate-pulse" style={{ animationDelay: "0.6s" }} />
+                <div className="aspect-video bg-black relative">
+                  <img
+                    src="/3CF5C61E-7861-4667-B701-FBBCCEBC9B6D.jpeg"
+                    alt="Giveaway video thumbnail"
+                    className="absolute inset-0 w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-x-0 top-0 h-12 bg-gradient-to-b from-black/70 to-transparent" />
+                  <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-black/80 to-transparent" />
+                  <div className="absolute inset-x-0 top-0 flex items-center justify-between px-4 h-12 text-white text-sm">
+                    <span className="font-semibold">YouTube</span>
+                    <span>3:25</span>
                   </div>
-                  
-                  {/* Play button - 100% transparent with thin black outline */}
-                  <div className="relative z-10 group-hover:scale-110 transition-transform duration-300">
-                    <div className="bg-transparent rounded-full p-6 border border-black/80 shadow-none" style={{ borderWidth: '1.5px' }}>
-                      <svg 
-                        className="w-16 h-16 text-black fill-none stroke-black ml-1" 
-                        viewBox="0 0 24 24" 
-                        strokeWidth="1.5"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      >
-                        <polygon points="5 3 19 12 5 21 5 3" />
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="w-32 h-20 bg-white rounded-3xl flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform">
+                      <svg viewBox="0 0 24 24" className="w-24 h-24 fill-red-600">
+                        <path d="M10 15.5V8.5L16 12L10 15.5Z" />
                       </svg>
                     </div>
                   </div>
-                  
-                  {/* Play overlay text */}
-                  <div className="absolute bottom-4 left-4 right-4 z-10">
-                    <p className="text-white font-bold text-sm drop-shadow-lg">Watch the Giveaway Video</p>
+                  <div className="absolute bottom-4 left-4 right-4 text-white">
+                    <p className="text-sm font-semibold">Watch the Giveaway Video</p>
                   </div>
                 </div>
               </a>
