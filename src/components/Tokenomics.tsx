@@ -82,13 +82,13 @@ const Tokenomics = () => {
         </div>
 
         {/* Allocation Cards */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 justify-items-center">
           {allocations.map((allocation, index) => {
             const Icon = allocation.icon;
             return (
               <Card
                 key={allocation.title}
-                className="relative bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md border-2 p-5 sm:p-6 md:p-7 hover:scale-105 transition-all duration-300 animate-fade-in-up group rounded-xl overflow-hidden shadow-[0_8px_24px_rgba(0,0,0,0.4)] hover:shadow-[0_12px_32px_rgba(0,0,0,0.5)] hover:-translate-y-2"
+                className="relative w-full max-w-sm bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md border-2 p-5 sm:p-6 md:p-7 hover:scale-105 transition-all duration-300 animate-fade-in-up group rounded-xl overflow-hidden shadow-[0_8px_24px_rgba(0,0,0,0.4)] hover:shadow-[0_12px_32px_rgba(0,0,0,0.5)] hover:-translate-y-2"
                 style={{ 
                   animationDelay: `${index * 0.1}s`,
                   borderColor: `${allocation.color}60`, // More visible border

@@ -92,9 +92,6 @@ const Footer = () => {
           <p className="text-center text-white text-sm leading-relaxed">
             © {currentYear} PEPONK. Built by the community, for the community.
           </p>
-          <p className="text-center text-white text-sm leading-relaxed break-all">
-            Contact: Gqqdgfkn7bcsuBQZEk9oMBkqCv1bRXvPmTLs3sQ9pump
-          </p>
           <p className="text-center text-white/80 text-xs max-w-3xl mx-auto leading-relaxed">
             Disclaimer: Cryptocurrency investments carry risk. PEPONK is a meme token created for entertainment 
             and community engagement. Always do your own research and invest responsibly.

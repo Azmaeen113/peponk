@@ -83,6 +83,13 @@ const SupplyInfo = () => {
               </Button>
             </div>
           </div>
+
+          <div className="mt-6 text-center space-y-2">
+            <div className="text-sm font-semibold text-charcoal">Official Contact</div>
+            <p className="text-sm sm:text-base font-mono text-foreground break-all">
+              Gqqdgfkn7bcsuBQZEk9oMBkqCv1bRXvPmTLs3sQ9pump
+            </p>
+          </div>
         </Card>
       </div>
     </section>
