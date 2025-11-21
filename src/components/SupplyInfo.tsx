@@ -6,7 +6,7 @@ import { toast } from "sonner";
 
 const SupplyInfo = () => {
   const [copied, setCopied] = useState(false);
-  const contractAddress = "EVoEhwNhNTsAba6kKNRVV1Bovzbs8XapMCncv8CeMrcv";
+  const contractAddress = "Gqqdgfkn7bcsuBQZEk9oMBkqCv1bRXvPmTLs3sQ9pump";
 
   const handleCopy = () => {
     navigator.clipboard.writeText(contractAddress);
@@ -82,13 +82,6 @@ const SupplyInfo = () => {
                 )}
               </Button>
             </div>
-          </div>
-
-          <div className="mt-6 text-center space-y-2">
-            <div className="text-sm font-semibold text-charcoal">Official Contact</div>
-            <p className="text-sm sm:text-base font-mono text-foreground break-all">
-              Gqqdgfkn7bcsuBQZEk9oMBkqCv1bRXvPmTLs3sQ9pump
-            </p>
           </div>
         </Card>
       </div>
