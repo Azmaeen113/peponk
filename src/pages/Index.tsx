@@ -1,3 +1,4 @@
+import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Mission from "@/components/Mission";
 import Tokenomics from "@/components/Tokenomics";
@@ -11,7 +12,8 @@ import FloatingButton from "@/components/FloatingButton";
 
 const Index = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-background">
+      <Navbar />
       <Hero />
       <Mission />
       <Tokenomics />

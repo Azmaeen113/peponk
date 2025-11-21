@@ -2,7 +2,7 @@ import peponkLogo from "@/assets/peponk-logo.png";
 
 const Mission = () => {
   return (
-    <section className="py-20 bg-background relative overflow-hidden">
+    <section id="mission" className="py-20 bg-background relative overflow-hidden scroll-mt-28">
       {/* Organic blob shapes */}
       <div className="absolute top-20 left-10 w-64 h-64 bg-accent/10 rounded-full blur-3xl animate-pulse" />
       <div className="absolute bottom-20 right-10 w-96 h-96 bg-secondary/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1s" }} />

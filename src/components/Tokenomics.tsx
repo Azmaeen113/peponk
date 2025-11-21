@@ -54,7 +54,7 @@ const Tokenomics = () => {
   ];
 
   return (
-    <section className="py-16 sm:py-20 bg-dark-bg text-white relative overflow-hidden">
+    <section id="tokenomics" className="py-16 sm:py-20 bg-dark-bg text-white relative overflow-hidden scroll-mt-28">
       <div className="absolute inset-0 bg-gradient-cool opacity-10" />
       
       <div className="container mx-auto px-4 relative z-10">

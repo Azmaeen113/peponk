@@ -4,7 +4,7 @@ import { Card } from "@/components/ui/card";
 
 const GiveawayBanner = () => {
   return (
-    <section className="py-16 sm:py-20 relative overflow-hidden">
+    <section id="giveaway" className="py-16 sm:py-20 relative overflow-hidden scroll-mt-28">
       {/* Smooth color-changing background slideshow */}
       <div className="absolute inset-0 giveaway-color-slideshow" />
       

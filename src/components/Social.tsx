@@ -31,7 +31,7 @@ const Social = () => {
   ];
 
   return (
-    <section className="py-16 sm:py-20 bg-dark-bg text-white relative overflow-hidden">
+    <section id="community" className="py-16 sm:py-20 bg-dark-bg text-white relative overflow-hidden scroll-mt-28">
       <div className="absolute inset-0 bg-gradient-vibrant opacity-5" />
       
       <div className="container mx-auto px-4 relative z-10">

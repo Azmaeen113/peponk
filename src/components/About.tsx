@@ -3,7 +3,7 @@ import { TrendingUp } from "lucide-react";
 
 const About = () => {
   return (
-    <section className="py-20 bg-gradient-warm relative overflow-hidden">
+    <section id="about" className="py-20 bg-gradient-warm relative overflow-hidden scroll-mt-28">
       {/* Wavy divider top */}
       <div className="absolute top-0 left-0 right-0 h-16 bg-background">
         <svg className="absolute bottom-0 w-full h-16" preserveAspectRatio="none" viewBox="0 0 1440 54">
@@ -59,12 +59,6 @@ const About = () => {
         </div>
       </div>
 
-      {/* Wavy divider bottom */}
-      <div className="absolute bottom-0 left-0 right-0 h-16 bg-background">
-        <svg className="absolute top-0 w-full h-16" preserveAspectRatio="none" viewBox="0 0 1440 54">
-          <path fill="hsl(var(--primary))" d="M0,54 C240,0 480,0 720,27 C960,54 1200,54 1440,27 L1440,0 L0,0 Z" />
-        </svg>
-      </div>
     </section>
   );
 };

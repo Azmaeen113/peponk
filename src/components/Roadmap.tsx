@@ -67,7 +67,7 @@ const Roadmap = () => {
   };
 
   return (
-    <section className="py-16 sm:py-20 relative overflow-hidden">
+    <section id="roadmap" className="py-16 sm:py-20 relative overflow-hidden scroll-mt-28">
       {/* Animated gradient background - Blue → Pink → Theme Colors */}
       <div className="absolute inset-0 roadmap-gradient-animated" />
       <div className="container mx-auto px-4 relative z-10">

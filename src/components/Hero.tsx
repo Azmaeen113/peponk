@@ -4,7 +4,10 @@ import peponkMain from "@/assets/peponk-main.png";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-hero">
+    <section
+      id="hero"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-hero scroll-mt-28"
+    >
       {/* Animated gradient background */}
       <div className="absolute inset-0 bg-gradient-hero animate-spin-slow opacity-60" />
       
@@ -32,7 +35,7 @@ const Hero = () => {
               <img
                 src="/top%20peponk%20title.png"
                 alt="PEPONK Title"
-                className="w-full max-w-2xl mx-auto lg:max-w-xl lg:mx-auto drop-shadow-[0_4px_16px_rgba(0,0,0,0.2)] lg:translate-x-6"
+                className="w-3/5 sm:w-4/5 md:w-full max-w-2xl mx-auto lg:max-w-xl drop-shadow-[0_4px_16px_rgba(0,0,0,0.2)] lg:translate-x-6"
                 loading="lazy"
               />
               <p className="sr-only">PEPONK - Where Memes Meet Million-Dollar Dreams</p>
