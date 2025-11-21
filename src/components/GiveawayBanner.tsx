@@ -4,7 +4,7 @@ import { Card } from "@/components/ui/card";
 
 const GiveawayBanner = () => {
   return (
-    <section className="py-20 relative overflow-hidden">
+    <section className="py-16 sm:py-20 relative overflow-hidden">
       {/* Smooth color-changing background slideshow */}
       <div className="absolute inset-0 giveaway-color-slideshow" />
       
@@ -29,32 +29,32 @@ const GiveawayBanner = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-6xl mx-auto">
           {/* Header Section */}
-          <div className="text-center mb-12 animate-fade-in">
+          <div className="text-center mb-10 sm:mb-12 animate-fade-in">
             {/* Sparkle decoration with icons */}
-            <div className="flex justify-center gap-4 mb-6">
+            <div className="flex justify-center gap-3 sm:gap-4 mb-5 sm:mb-6">
               <Sparkles className="w-10 h-10 text-accent animate-pulse" />
               <Gift className="w-14 h-14 text-accent animate-pulse" style={{ animationDelay: "0.2s" }} />
               <Sparkles className="w-10 h-10 text-accent animate-pulse" style={{ animationDelay: "0.4s" }} />
             </div>
 
             {/* Main heading with icons */}
-            <div className="flex items-center justify-center gap-4 mb-6 flex-wrap">
-              <Trophy className="w-12 h-12 md:w-16 md:h-16 text-accent animate-bounce" />
-              <h2 className="text-4xl md:text-6xl lg:text-7xl font-black text-black leading-tight drop-shadow-[0_2px_4px_rgba(255,255,255,0.3)]">
+            <div className="flex items-center justify-center gap-3 sm:gap-4 mb-5 sm:mb-6 flex-wrap">
+              <Trophy className="w-10 h-10 md:w-16 md:h-16 text-accent animate-bounce" />
+              <h2 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-black leading-tight drop-shadow-[0_2px_4px_rgba(255,255,255,0.3)]">
                 MILLION DOLLAR GIVEAWAY
               </h2>
-              <Trophy className="w-12 h-12 md:w-16 md:h-16 text-accent animate-bounce" style={{ animationDelay: "0.2s" }} />
+              <Trophy className="w-10 h-10 md:w-16 md:h-16 text-accent animate-bounce" style={{ animationDelay: "0.2s" }} />
             </div>
 
             {/* Subtitle */}
-            <p className="text-xl md:text-2xl text-black font-semibold drop-shadow-[0_2px_4px_rgba(255,255,255,0.3)] mb-8 max-w-2xl mx-auto">
+            <p className="text-lg sm:text-xl md:text-2xl text-black font-semibold drop-shadow-[0_2px_4px_rgba(255,255,255,0.3)] mb-6 sm:mb-8 max-w-2xl mx-auto">
               Don't miss your chance to win big with PEPONK!
             </p>
           </div>
 
           {/* Main Content Card */}
-          <Card className="bg-gradient-to-br from-white/30 to-white/20 backdrop-blur-xl border-2 border-white/40 rounded-2xl p-8 md:p-12 shadow-[0_20px_60px_rgba(0,0,0,0.5)] mb-8 animate-scale-in">
-            <div className="grid md:grid-cols-2 gap-8 items-center">
+          <Card className="bg-gradient-to-br from-white/30 to-white/20 backdrop-blur-xl border-2 border-white/40 rounded-2xl p-5 sm:p-8 md:p-12 shadow-[0_20px_60px_rgba(0,0,0,0.5)] mb-8 animate-scale-in">
+            <div className="grid md:grid-cols-2 gap-6 sm:gap-8 items-center">
               {/* Video Section - Clickable to YouTube */}
               <a
                 href="https://www.youtube.com/watch?v=xMHJGd3wwZk"
@@ -103,37 +103,37 @@ const GiveawayBanner = () => {
 
               {/* Info Section */}
               <div className="space-y-6">
-                <div className="flex items-start gap-4">
-                  <div className="bg-accent/20 rounded-full p-3 flex-shrink-0">
-                    <Gift className="w-8 h-8 text-accent" />
+                <div className="flex items-start gap-3">
+                  <div className="bg-accent/20 rounded-full p-2.5 sm:p-3 flex-shrink-0">
+                    <Gift className="w-7 h-7 sm:w-8 sm:h-8 text-accent" />
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold text-black mb-2">Massive Prize Pool</h3>
-                    <p className="text-black leading-relaxed font-medium">
+                    <h3 className="text-xl sm:text-2xl font-bold text-black mb-2">Massive Prize Pool</h3>
+                    <p className="text-black leading-relaxed font-medium text-sm sm:text-base">
                       Participate in our exclusive giveaway and stand a chance to win big rewards!
                     </p>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4">
-                  <div className="bg-primary/20 rounded-full p-3 flex-shrink-0">
-                    <Zap className="w-8 h-8 text-primary" />
+                <div className="flex items-start gap-3">
+                  <div className="bg-primary/20 rounded-full p-2.5 sm:p-3 flex-shrink-0">
+                    <Zap className="w-7 h-7 sm:w-8 sm:h-8 text-primary" />
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold text-black mb-2">Easy to Enter</h3>
-                    <p className="text-black leading-relaxed font-medium">
+                    <h3 className="text-xl sm:text-2xl font-bold text-black mb-2">Easy to Enter</h3>
+                    <p className="text-black leading-relaxed font-medium text-sm sm:text-base">
                       Simply watch the video and follow the instructions to enter the giveaway.
                     </p>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4">
-                  <div className="bg-secondary/20 rounded-full p-3 flex-shrink-0">
-                    <Trophy className="w-8 h-8 text-secondary" />
+                <div className="flex items-start gap-3">
+                  <div className="bg-secondary/20 rounded-full p-2.5 sm:p-3 flex-shrink-0">
+                    <Trophy className="w-7 h-7 sm:w-8 sm:h-8 text-secondary" />
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold text-black mb-2">Multiple Winners</h3>
-                    <p className="text-black leading-relaxed font-medium">
+                    <h3 className="text-xl sm:text-2xl font-bold text-black mb-2">Multiple Winners</h3>
+                    <p className="text-black leading-relaxed font-medium text-sm sm:text-base">
                       Multiple lucky winners will be selected from our community!
                     </p>
                   </div>

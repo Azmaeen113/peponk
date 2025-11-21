@@ -23,11 +23,11 @@ const SupplyInfo = () => {
   ];
 
   return (
-    <section className="py-20 bg-background">
+    <section className="py-16 sm:py-20 bg-background">
       <div className="container mx-auto px-4">
         {/* Enhanced card with better borders and shadows */}
-        <Card className="max-w-4xl mx-auto p-8 md:p-12 bg-gradient-to-br from-card to-card/50 backdrop-blur-sm border-2 border-primary/30 shadow-[0_8px_24px_rgba(0,0,0,0.15)] animate-scale-in rounded-lg">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">
+        <Card className="max-w-4xl mx-auto p-6 sm:p-8 md:p-12 bg-gradient-to-br from-card to-card/50 backdrop-blur-sm border-2 border-primary/30 shadow-[0_8px_24px_rgba(0,0,0,0.15)] animate-scale-in rounded-lg">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-6 sm:mb-8">
             <span 
               className="bg-clip-text text-transparent drop-shadow-[0_2px_6px_rgba(0,0,0,0.2)]"
               style={{
@@ -42,16 +42,16 @@ const SupplyInfo = () => {
           </h2>
 
           {/* Stats Grid */}
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-6 sm:mb-8">
             {stats.map((stat, index) => (
               <div
                 key={stat.label}
-                className="text-center p-4 rounded-lg bg-muted/40 hover:bg-muted/60 transition-all duration-300 animate-fade-in-up border border-primary/10 hover:border-primary/20 shadow-sm hover:shadow-md hover:scale-105 hover:-translate-y-1"
+                className="text-center p-3 sm:p-4 rounded-lg bg-muted/40 hover:bg-muted/60 transition-all duration-300 animate-fade-in-up border border-primary/10 hover:border-primary/20 shadow-sm hover:shadow-md hover:scale-105 hover:-translate-y-1"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 {/* Enhanced contrast for text */}
                 <div className="text-sm text-charcoal mb-2 font-semibold">{stat.label}</div>
-                <div className="text-2xl font-bold text-foreground">{stat.value}</div>
+                <div className="text-xl sm:text-2xl font-bold text-foreground">{stat.value}</div>
                 {stat.suffix && (
                   <div className="text-sm text-primary font-semibold">{stat.suffix}</div>
                 )}
@@ -60,12 +60,12 @@ const SupplyInfo = () => {
           </div>
 
           {/* Contract Address - Enhanced contrast and styling */}
-          <div className="space-y-4">
+          <div className="space-y-3 sm:space-y-4">
             <div className="text-center text-sm text-charcoal font-semibold">
               Contract Address
             </div>
-            <div className="flex items-center gap-2 p-4 bg-muted/40 rounded-lg border border-primary/10 shadow-sm">
-              <code className="flex-1 text-sm font-mono text-foreground break-all leading-relaxed">
+            <div className="flex items-center gap-2 p-3 sm:p-4 bg-muted/40 rounded-lg border border-primary/10 shadow-sm">
+              <code className="flex-1 text-xs sm:text-sm font-mono text-foreground break-all leading-relaxed">
                 {contractAddress}
               </code>
               {/* Enhanced button with hover effects */}

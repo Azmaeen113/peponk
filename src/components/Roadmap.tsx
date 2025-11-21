@@ -67,25 +67,25 @@ const Roadmap = () => {
   };
 
   return (
-    <section className="py-20 relative overflow-hidden">
+    <section className="py-16 sm:py-20 relative overflow-hidden">
       {/* Animated gradient background - Blue → Pink → Theme Colors */}
       <div className="absolute inset-0 roadmap-gradient-animated" />
       <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-6xl font-bold mb-4 text-black drop-shadow-[0_2px_8px_rgba(255,255,255,0.5)]">
+        <div className="text-center mb-12 sm:mb-16 animate-fade-in">
+          <h2 className="text-3xl md:text-5xl font-bold mb-3 sm:mb-4 text-black drop-shadow-[0_2px_8px_rgba(255,255,255,0.5)]">
             Roadmap
           </h2>
           {/* Enhanced contrast for text on cyan background */}
-          <p className="text-xl text-black font-semibold drop-shadow-[0_2px_4px_rgba(255,255,255,0.5)]">
+          <p className="text-lg sm:text-xl text-black font-semibold drop-shadow-[0_2px_4px_rgba(255,255,255,0.5)]">
             Our journey to the moon, one hop at a time
           </p>
         </div>
 
         <div className="relative max-w-4xl mx-auto">
           {/* Enhanced vertical timeline line with better visibility */}
-          <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-2 bg-gradient-to-b from-secondary via-primary to-accent transform md:-translate-x-1/2 shadow-lg rounded-full" />
+          <div className="absolute left-7 sm:left-8 md:left-1/2 top-0 bottom-0 w-1.5 sm:w-2 bg-gradient-to-b from-secondary via-primary to-accent transform md:-translate-x-1/2 shadow-lg rounded-full" />
 
-          <div className="space-y-12">
+          <div className="space-y-10 sm:space-y-12">
             {phases.map((phase, index) => (
               <div
                 key={phase.phase}
@@ -95,33 +95,33 @@ const Roadmap = () => {
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
                 {/* Enhanced timeline node with better visibility */}
-                <div className="absolute left-8 md:left-1/2 transform md:-translate-x-1/2 z-10 bg-background p-2 rounded-full border-4 border-primary shadow-[0_4px_12px_rgba(0,0,0,0.2)]">
+                <div className="absolute left-7 sm:left-8 md:left-1/2 transform md:-translate-x-1/2 z-10 bg-background p-1.5 sm:p-2 rounded-full border-[3px] sm:border-4 border-primary shadow-[0_4px_12px_rgba(0,0,0,0.2)]">
                   {getStatusIcon(phase.status)}
                 </div>
 
                 {/* Content card with enhanced borders and shadows */}
-                <div className={`ml-24 md:ml-0 ${index % 2 === 0 ? "md:mr-[55%]" : "md:ml-[55%]"} w-full md:w-[45%]`}>
-                  <Card className="p-6 hover:shadow-[0_8px_24px_rgba(0,0,0,0.15)] transition-all duration-300 border-2 border-primary/30 hover:border-primary/50 rounded-lg hover:-translate-y-1 bg-white/95 backdrop-blur-sm">
-                    <div className="flex items-center gap-3 mb-4">
-                      <span className="text-sm font-bold text-white bg-primary px-3 py-1 rounded-full shadow-md">
+                <div className={`ml-20 sm:ml-24 md:ml-0 ${index % 2 === 0 ? "md:mr-[55%]" : "md:ml-[55%]"} w-full md:w-[45%]`}>
+                  <Card className="p-5 sm:p-6 hover:shadow-[0_8px_24px_rgba(0,0,0,0.15)] transition-all duration-300 border-2 border-primary/30 hover:border-primary/50 rounded-lg hover:-translate-y-1 bg-white/95 backdrop-blur-sm">
+                    <div className="flex items-center gap-2.5 sm:gap-3 mb-3 sm:mb-4">
+                      <span className="text-xs sm:text-sm font-bold text-white bg-primary px-3 py-1 rounded-full shadow-md">
                         Phase {phase.phase}
                       </span>
                       {phase.status === "current" && (
-                        <span className="text-xs font-bold text-white bg-primary px-3 py-1 rounded-full animate-pulse shadow-md">
+                        <span className="text-[10px] sm:text-xs font-bold text-white bg-primary px-2.5 py-1 rounded-full animate-pulse shadow-md">
                           IN PROGRESS
                         </span>
                       )}
                       {phase.status === "completed" && (
-                        <span className="text-xs font-bold text-white bg-secondary px-3 py-1 rounded-full shadow-md">
+                        <span className="text-[10px] sm:text-xs font-bold text-white bg-secondary px-2.5 py-1 rounded-full shadow-md">
                           COMPLETED
                         </span>
                       )}
                     </div>
                     
-                    <h3 className="text-2xl font-bold mb-4 text-foreground">{phase.title}</h3>
+                    <h3 className="text-xl sm:text-2xl font-bold mb-3 text-foreground">{phase.title}</h3>
                     
                     {/* Enhanced contrast for list items */}
-                    <ul className="space-y-2">
+                    <ul className="space-y-1.5 sm:space-y-2">
                       {phase.items.map((item) => (
                         <li key={item} className="flex items-start gap-2 leading-relaxed">
                           {phase.status === "completed" ? (

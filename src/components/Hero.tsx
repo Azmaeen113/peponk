@@ -29,22 +29,13 @@ const Hero = () => {
           {/* Text Content */}
           <div className="flex-1 text-center lg:text-left space-y-8 animate-fade-in">
             <div className="space-y-4">
-              {/* Pure black text for maximum contrast on light background */}
-              <h1 className="text-5xl md:text-7xl font-black text-black leading-tight drop-shadow-[0_2px_4px_rgba(0,0,0,0.1)]">
-                PEPONK
-              </h1>
-              <div className="flex items-center justify-center lg:justify-start gap-2">
-                <span className="text-6xl md:text-8xl animate-bounce text-secondary font-black drop-shadow-[0_2px_4px_rgba(0,0,0,0.1)]">!</span>
-                <span className="text-6xl md:text-8xl animate-bounce text-secondary font-black drop-shadow-[0_2px_4px_rgba(0,0,0,0.1)]" style={{ animationDelay: "0.1s" }}>!</span>
-                <span className="text-6xl md:text-8xl animate-bounce text-secondary font-black drop-shadow-[0_2px_4px_rgba(0,0,0,0.1)]" style={{ animationDelay: "0.2s" }}>!</span>
-              </div>
-              <h2 className="text-2xl md:text-4xl font-bold text-black drop-shadow-[0_1px_2px_rgba(0,0,0,0.1)]">
-                Where Memes Meet<br />
-                <span className="bg-gradient-to-r from-accent to-secondary bg-clip-text text-transparent drop-shadow-[0_1px_3px_rgba(0,0,0,0.1)]">
-                  Million-Dollar Dreams
-                </span>
-              </h2>
-              {/* Pure black text for maximum contrast */}
+              <img
+                src="/top%20peponk%20title.png"
+                alt="PEPONK Title"
+                className="w-full max-w-2xl mx-auto lg:mx-0 drop-shadow-[0_4px_16px_rgba(0,0,0,0.2)]"
+                loading="lazy"
+              />
+              <p className="sr-only">PEPONK - Where Memes Meet Million-Dollar Dreams</p>
               <p className="text-lg md:text-xl text-black max-w-2xl leading-relaxed drop-shadow-[0_1px_2px_rgba(0,0,0,0.1)] flex items-center justify-center lg:justify-start gap-2">
                 The memecoin that's hopping straight to the moon{" "}
                 <Rocket className="inline-block w-6 h-6 text-secondary animate-bounce" />
