@@ -25,7 +25,7 @@ const Navbar = () => {
     <header className="fixed top-0 left-0 right-0 z-50">
       <div className="container mx-auto px-4 h-16 flex items-center justify-center relative">
 
-        <nav className="hidden lg:flex items-center gap-6 text-sm font-semibold text-black">
+        <nav className="hidden lg:flex items-center gap-6 text-sm font-semibold text-black bg-white/30 backdrop-blur-lg px-6 py-2 rounded-full shadow-[0_4px_18px_rgba(0,0,0,0.1)]">
           {navItems.map((item) => (
             <a key={item.href} href={item.href} className="hover:text-primary transition-colors">
               {item.label}

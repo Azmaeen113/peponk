@@ -35,7 +35,7 @@ const Hero = () => {
               <img
                 src="/top%20peponk%20title.png"
                 alt="PEPONK Title"
-                className="w-3/5 sm:w-4/5 md:w-full max-w-2xl mx-auto lg:max-w-xl drop-shadow-[0_4px_16px_rgba(0,0,0,0.2)] lg:translate-x-6"
+                className="w-3/5 sm:w-4/5 md:w-full max-w-2xl mx-auto lg:mx-0 lg:max-w-xl drop-shadow-[0_4px_16px_rgba(0,0,0,0.2)] lg:-translate-x-10 lg:-translate-y-4"
                 loading="lazy"
               />
               <p className="sr-only">PEPONK - Where Memes Meet Million-Dollar Dreams</p>
