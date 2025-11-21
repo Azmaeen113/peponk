@@ -39,11 +39,11 @@ const GiveawayBanner = () => {
 
             {/* Main heading with icons */}
             <div className="flex items-center justify-center gap-3 sm:gap-4 mb-5 sm:mb-6 flex-wrap">
-              <Trophy className="w-10 h-10 md:w-16 md:h-16 text-accent animate-bounce" />
-              <h2 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-black leading-tight drop-shadow-[0_2px_4px_rgba(255,255,255,0.3)]">
+              <Trophy className="w-9 h-9 md:w-12 md:h-12 lg:w-14 lg:h-14 text-accent animate-bounce" />
+              <h2 className="text-3xl sm:text-5xl md:text-4xl lg:text-5xl font-black text-black leading-tight drop-shadow-[0_2px_4px_rgba(255,255,255,0.3)] max-w-3xl mx-auto">
                 MILLION DOLLAR GIVEAWAY
               </h2>
-              <Trophy className="w-10 h-10 md:w-16 md:h-16 text-accent animate-bounce" style={{ animationDelay: "0.2s" }} />
+              <Trophy className="w-9 h-9 md:w-12 md:h-12 lg:w-14 lg:h-14 text-accent animate-bounce" style={{ animationDelay: "0.2s" }} />
             </div>
 
             {/* Subtitle */}
@@ -53,8 +53,8 @@ const GiveawayBanner = () => {
           </div>
 
           {/* Main Content Card */}
-          <Card className="bg-gradient-to-br from-white/30 to-white/20 backdrop-blur-xl border-2 border-white/40 rounded-2xl p-5 sm:p-8 md:p-12 shadow-[0_20px_60px_rgba(0,0,0,0.5)] mb-8 animate-scale-in">
-            <div className="grid md:grid-cols-2 gap-6 sm:gap-8 items-center">
+          <Card className="bg-gradient-to-br from-white/25 to-white/15 backdrop-blur-lg border border-white/30 rounded-2xl p-4 sm:p-6 lg:p-8 shadow-[0_12px_30px_rgba(0,0,0,0.35)] mb-8 animate-scale-in max-w-5xl mx-auto">
+            <div className="grid lg:grid-cols-[1.05fr_0.95fr] gap-5 sm:gap-6 items-center">
               {/* Video Section - Clickable to YouTube */}
               <a
                 href="https://www.youtube.com/watch?v=xMHJGd3wwZk"
@@ -102,38 +102,38 @@ const GiveawayBanner = () => {
               </a>
 
               {/* Info Section */}
-              <div className="space-y-6">
+              <div className="space-y-4">
                 <div className="flex items-start gap-3">
-                  <div className="bg-accent/20 rounded-full p-2.5 sm:p-3 flex-shrink-0">
-                    <Gift className="w-7 h-7 sm:w-8 sm:h-8 text-accent" />
+                  <div className="bg-accent/20 rounded-full p-2 flex-shrink-0">
+                    <Gift className="w-6 h-6 sm:w-7 sm:h-7 text-accent" />
                   </div>
                   <div>
-                    <h3 className="text-xl sm:text-2xl font-bold text-black mb-2">Massive Prize Pool</h3>
-                    <p className="text-black leading-relaxed font-medium text-sm sm:text-base">
+                    <h3 className="text-lg sm:text-xl font-bold text-black mb-2">Massive Prize Pool</h3>
+                    <p className="text-black leading-relaxed font-medium text-sm">
                       Participate in our exclusive giveaway and stand a chance to win big rewards!
                     </p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <div className="bg-primary/20 rounded-full p-2.5 sm:p-3 flex-shrink-0">
-                    <Zap className="w-7 h-7 sm:w-8 sm:h-8 text-primary" />
+                  <div className="bg-primary/20 rounded-full p-2 flex-shrink-0">
+                    <Zap className="w-6 h-6 sm:w-7 sm:h-7 text-primary" />
                   </div>
                   <div>
-                    <h3 className="text-xl sm:text-2xl font-bold text-black mb-2">Easy to Enter</h3>
-                    <p className="text-black leading-relaxed font-medium text-sm sm:text-base">
+                    <h3 className="text-lg sm:text-xl font-bold text-black mb-2">Easy to Enter</h3>
+                    <p className="text-black leading-relaxed font-medium text-sm">
                       Simply watch the video and follow the instructions to enter the giveaway.
                     </p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <div className="bg-secondary/20 rounded-full p-2.5 sm:p-3 flex-shrink-0">
-                    <Trophy className="w-7 h-7 sm:w-8 sm:h-8 text-secondary" />
+                  <div className="bg-secondary/20 rounded-full p-2 flex-shrink-0">
+                    <Trophy className="w-6 h-6 sm:w-7 sm:h-7 text-secondary" />
                   </div>
                   <div>
-                    <h3 className="text-xl sm:text-2xl font-bold text-black mb-2">Multiple Winners</h3>
-                    <p className="text-black leading-relaxed font-medium text-sm sm:text-base">
+                    <h3 className="text-lg sm:text-xl font-bold text-black mb-2">Multiple Winners</h3>
+                    <p className="text-black leading-relaxed font-medium text-sm">
                       Multiple lucky winners will be selected from our community!
                     </p>
                   </div>
