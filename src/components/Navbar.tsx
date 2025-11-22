@@ -8,7 +8,6 @@ const navItems = [
   { label: "Roadmap", href: "#roadmap" },
   { label: "Supply", href: "#supply" },
   { label: "About", href: "#about" },
-  { label: "Giveaway", href: "#giveaway" },
   { label: "Community", href: "#community" },
 ];
 
