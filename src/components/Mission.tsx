@@ -10,7 +10,7 @@ const Mission = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
-          <div className="space-y-6 animate-fade-in-up">
+          <div className="space-y-6 animate-fade-in-up text-center md:text-left">
             <h2 className="text-4xl md:text-5xl font-bold">
               <span className="text-foreground drop-shadow-[0_2px_4px_rgba(0,0,0,0.1)]">Our Mission: No Shortcuts,{" "}</span>
               <span 
@@ -27,7 +27,7 @@ const Mission = () => {
             </h2>
             
             {/* Enhanced contrast for text on light background */}
-            <p className="text-lg text-charcoal leading-relaxed">
+            <p className="text-lg text-charcoal leading-relaxed text-center md:text-left">
               We're building a crypto community that values <span className="font-bold text-primary">people over chaos</span>, 
               slow and steady growth over hype, and <span className="font-bold text-secondary">honesty over shortcuts</span>. 
               PEPONK brings people together through fun, meaningful memes, clear communication, and consistent effort, 
