@@ -1,0 +1,37 @@
+Google Ads Tag Implementation Proof
+
+1. Files updated:
+   - `index.html`
+
+2. Implemented snippets (added inside the `<head>` block):
+
+   ```
+   <!-- Google tag (gtag.js) -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17752629243"></script>
+   <script>
+     window.dataLayer = window.dataLayer || [];
+     function gtag(){dataLayer.push(arguments);}
+     gtag('js', new Date());
+     gtag('config', 'AW-17752629243');
+   </script>
+
+   <!-- Event snippet for Purchase conversion page -->
+   <script>
+     gtag('event', 'conversion', {
+       send_to: 'AW-17752629243/bdzDCPGJrsYbEPU_jpFC',
+       transaction_id: ''
+     });
+   </script>
+   ```
+
+3. Location:
+   - The scripts are placed before the closing `</head>` tag so they load on every page render.
+
+4. Tracking ID:
+   - Google Ads conversion ID: `AW-17752629243`
+
+5. Conversion event:
+   - Sends a `conversion` event to `AW-17752629243/bdzDCPGJrsYbEPU_jpFC`.
+
+This demonstrates that the Google tag and conversion event requested in the email have been added to the site.
+

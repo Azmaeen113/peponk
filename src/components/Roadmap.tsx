@@ -8,9 +8,9 @@ const Roadmap = () => {
       title: "Token Launch",
       status: "completed",
       items: [
-        "Go live with official token",
+        "Go live with the token",
         "Establish initial liquidity",
-        "Launch on supported exchanges",
+        "List on supported exchanges",
       ],
     },
     {
@@ -18,9 +18,9 @@ const Roadmap = () => {
       title: "Engagement Activities",
       status: "completed",
       items: [
-        "Host community contests",
-        "Distribute first airdrops",
-        "Launch social media campaigns",
+        "Run contests and AMAs with KOLs",
+        "Host collaborative community events",
+        "Reward active community members",
       ],
     },
     {
@@ -28,9 +28,9 @@ const Roadmap = () => {
       title: "Community Feedback",
       status: "current",
       items: [
-        "Launch community poll",
-        "Gather feature feedback",
-        "Open discussions for improvements",
+        "Launch community polls",
+        "Discuss product improvements",
+        "Prioritize ideas with the DAO",
       ],
     },
     {
@@ -38,19 +38,49 @@ const Roadmap = () => {
       title: "Strategic Collaborations",
       status: "upcoming",
       items: [
-        "Partner with meme projects",
-        "Cross-promote with aligned brands",
-        "Co-develop initiatives",
+        "Partner with like-minded projects",
+        "Expand reach with co-marketing pushes",
+        "Share tech & liquidity resources",
       ],
     },
     {
       phase: 5,
+      title: "AI Agent Integration",
+      status: "upcoming",
+      items: [
+        "Build Peponk AI agent prototype",
+        "Integrate agent into ecosystem operations",
+        "Unlock smarter user utilities",
+      ],
+    },
+    {
+      phase: 6,
+      title: "Peponk NFT Collections",
+      status: "upcoming",
+      items: [
+        "Design identity-driven NFT assets",
+        "Add utility & engagement perks",
+        "Launch collections to the community",
+      ],
+    },
+    {
+      phase: 7,
+      title: "Play-to-Earn Mini Game",
+      status: "upcoming",
+      items: [
+        "Prototype fun P2E gameplay loop",
+        "Reward players with in-game earn mechanics",
+        "Expand on-chain engagement via quests",
+      ],
+    },
+    {
+      phase: 8,
       title: "Growth Campaigns",
       status: "upcoming",
       items: [
-        "Initiate growth campaigns",
-        "Launch referral program",
-        "Strengthen engagement & retention",
+        "Host mini-events & seasonal pushes",
+        "Launch community referral drives",
+        "Sustain momentum with partners",
       ],
     },
   ];
