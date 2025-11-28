@@ -25,12 +25,12 @@ const Roadmap = () => {
     },
     {
       phase: 3,
-      title: "Community Feedback",
-      status: "current",
+      title: "AI Agent Integration",
+      status: "upcoming",
       items: [
-        "Launch community polls",
-        "Discuss product improvements",
-        "Prioritize ideas with the DAO",
+        "Build Peponk AI agent prototype",
+        "Integrate agent into ecosystem operations",
+        "Unlock smarter user utilities",
       ],
     },
     {
@@ -45,16 +45,6 @@ const Roadmap = () => {
     },
     {
       phase: 5,
-      title: "AI Agent Integration",
-      status: "upcoming",
-      items: [
-        "Build Peponk AI agent prototype",
-        "Integrate agent into ecosystem operations",
-        "Unlock smarter user utilities",
-      ],
-    },
-    {
-      phase: 6,
       title: "Peponk NFT Collections",
       status: "upcoming",
       items: [
@@ -64,23 +54,13 @@ const Roadmap = () => {
       ],
     },
     {
-      phase: 7,
+      phase: 6,
       title: "Play-to-Earn Mini Game",
       status: "upcoming",
       items: [
         "Prototype fun P2E gameplay loop",
         "Reward players with in-game earn mechanics",
         "Expand on-chain engagement via quests",
-      ],
-    },
-    {
-      phase: 8,
-      title: "Growth Campaigns",
-      status: "upcoming",
-      items: [
-        "Host mini-events & seasonal pushes",
-        "Launch community referral drives",
-        "Sustain momentum with partners",
       ],
     },
   ];
