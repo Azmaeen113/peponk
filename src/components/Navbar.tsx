@@ -31,6 +31,14 @@ const Navbar = () => {
             </a>
           ))}
           <a
+            href={"/Peponk%20Whitepaper.pdf"}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="ml-2 px-5 py-2 rounded-full border border-black text-black font-bold hover:bg-black hover:text-white transition-colors"
+          >
+            Whitepaper
+          </a>
+          <a
             href={tradeLink}
             target="_blank"
             rel="noopener noreferrer"
@@ -62,6 +70,15 @@ const Navbar = () => {
                 {item.label}
               </a>
             ))}
+            <a
+              href={"/Peponk%20Whitepaper.pdf"}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-2 px-5 py-2 rounded-full border border-white text-center font-bold hover:bg-white hover:text-black transition-colors"
+              onClick={handleNavigate}
+            >
+              Whitepaper
+            </a>
             <a
               href={tradeLink}
               target="_blank"
