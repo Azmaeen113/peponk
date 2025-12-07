@@ -1,160 +1,101 @@
 import { Button } from "@/components/ui/button";
-import { Play, Sparkles, Gift, DollarSign, Trophy, Zap } from "lucide-react";
+import { Play, ShieldCheck, Users, Zap, Link } from "lucide-react";
 import { Card } from "@/components/ui/card";
+import peponkLogo from "@/assets/peponk-logo.png";
 
 const GiveawayBanner = () => {
   return (
-    <section id="giveaway" className="py-16 sm:py-20 relative overflow-hidden scroll-mt-28">
-      {/* Smooth color-changing background slideshow */}
-      <div className="absolute inset-0 giveaway-color-slideshow" />
-      
-      {/* Floating icon animations */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {[...Array(12)].map((_, i) => (
-          <div
-            key={i}
-            className="absolute animate-float opacity-30"
-            style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              animationDelay: `${Math.random() * 3}s`,
-              animationDuration: `${4 + Math.random() * 3}s`,
-            }}
-          >
-            <DollarSign className="w-8 h-8 text-accent" />
-          </div>
-        ))}
-      </div>
+    <section id="giveaway" className="py-16 sm:py-24 relative overflow-hidden scroll-mt-28">
+      <div className="absolute inset-0 giveaway-color-slideshow opacity-28 pointer-events-none" />
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-6xl mx-auto">
-          {/* Header Section */}
-          <div className="text-center mb-10 sm:mb-12 animate-fade-in">
-            {/* Sparkle decoration with icons */}
-            <div className="flex justify-center gap-3 sm:gap-4 mb-5 sm:mb-6">
-              <Sparkles className="w-10 h-10 text-accent animate-pulse" />
-              <Gift className="w-14 h-14 text-accent animate-pulse" style={{ animationDelay: "0.2s" }} />
-              <Sparkles className="w-10 h-10 text-accent animate-pulse" style={{ animationDelay: "0.4s" }} />
-            </div>
-
-            {/* Main heading with icons */}
-            <div className="flex items-center justify-center gap-3 sm:gap-4 mb-5 sm:mb-6 flex-wrap">
-              <Trophy className="w-9 h-9 md:w-12 md:h-12 lg:w-14 lg:h-14 text-accent animate-bounce" />
-              <h2 className="text-3xl sm:text-5xl md:text-4xl lg:text-5xl font-black text-black leading-tight drop-shadow-[0_2px_4px_rgba(255,255,255,0.3)] max-w-3xl mx-auto">
-                MILLION DOLLAR GIVEAWAY
-              </h2>
-              <Trophy className="w-9 h-9 md:w-12 md:h-12 lg:w-14 lg:h-14 text-accent animate-bounce" style={{ animationDelay: "0.2s" }} />
-            </div>
-
-            {/* Subtitle */}
-            <p className="text-lg sm:text-xl md:text-2xl text-black font-semibold drop-shadow-[0_2px_4px_rgba(255,255,255,0.3)] mb-6 sm:mb-8 max-w-2xl mx-auto">
-              Don't miss your chance to win big with PEPONK!
+          <div className="text-center mb-10 sm:mb-12">
+            <h2 className="text-3xl sm:text-5xl font-extrabold text-black">PEPONK IS INESCAPABLE</h2>
+            <p className="mt-4 text-md sm:text-lg text-black/85 max-w-2xl mx-auto">
+              All the other memecoin characters swarm and strike, but Peponk simply can't be taken down. Watch the cinematic battle where every attempt fails — Peponk is invincible.
             </p>
           </div>
 
-          {/* Main Content Card */}
-          <Card className="bg-gradient-to-br from-white/25 to-white/15 backdrop-blur-lg border border-white/30 rounded-2xl p-4 sm:p-6 lg:p-8 shadow-[0_12px_30px_rgba(0,0,0,0.35)] mb-8 animate-scale-in max-w-5xl mx-auto">
-            <div className="grid lg:grid-cols-[1.05fr_0.95fr] gap-5 sm:gap-6 items-center">
-              {/* Video Section - Clickable to YouTube */}
+          <Card className="rounded-2xl p-0 overflow-hidden shadow-[0_16px_40px_rgba(0,0,0,0.35)]">
+            <div className="grid lg:grid-cols-2 gap-0 items-stretch">
               <a
-                href="https://www.youtube.com/watch?v=xMHJGd3wwZk"
+                href="https://youtu.be/QmkVwna0hOk?si=8CEK73fgmDgzM8Bs"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="relative rounded-2xl overflow-hidden shadow-2xl group cursor-pointer block border border-black/10 bg-black"
+                className="group block bg-black/5 hover:brightness-105 transition"
               >
-                <div className="aspect-video bg-black relative">
+                <div className="aspect-video relative bg-black">
                   <img
                     src="/3CF5C61E-7861-4667-B701-FBBCCEBC9B6D.jpeg"
-                    alt="Giveaway video thumbnail"
+                    alt="Peponk battle thumbnail"
                     className="absolute inset-0 w-full h-full object-cover"
                   />
-                  <div className="absolute inset-x-0 top-0 h-12 bg-gradient-to-b from-black/70 to-transparent" />
-                  <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-black/80 to-transparent" />
-                  <div className="absolute inset-x-0 top-0 flex items-center justify-between px-4 h-12 text-white text-sm">
-                    <span className="font-semibold">YouTube</span>
-                    <span>3:25</span>
-                  </div>
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <div
-                      className="bg-white rounded-3xl flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform"
-                      style={{ width: "20%", height: "20%", minWidth: "3.5rem", minHeight: "2rem" }}
-                    >
-                      <svg viewBox="0 0 24 24" className="w-24 h-24 fill-red-600">
-                        <path d="M10 15.5V8.5L16 12L10 15.5Z" />
-                      </svg>
+                    <div className="bg-white rounded-full p-4 shadow-xl group-hover:scale-105 transition-transform">
+                      <Play className="w-10 h-10 text-red-600" />
                     </div>
-                  </div>
-                  <div className="absolute bottom-4 left-4 right-4 text-white">
-                    <p className="text-sm font-semibold">Watch the Giveaway Video</p>
                   </div>
                 </div>
               </a>
 
-              {/* Info Section */}
-              <div className="space-y-4">
-                <div className="flex items-start gap-3">
-                  <div className="bg-accent/20 rounded-full p-2 flex-shrink-0">
-                    <Gift className="w-6 h-6 sm:w-7 sm:h-7 text-accent" />
+              <div className="p-6 sm:p-8 flex flex-col justify-between bg-white">
+                <div>
+                  <div className="flex items-center gap-3 mb-4">
+                    <img src={peponkLogo} alt="Peponk" className="w-12 h-12 rounded-full shadow-sm" />
+                    <div>
+                      <h3 className="text-lg font-bold">Peponk — Inescapable</h3>
+                      <p className="text-sm text-black/70">A symbol of resilience and steady progress.</p>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="text-lg sm:text-xl font-bold text-black mb-2">Massive Prize Pool</h3>
-                    <p className="text-black leading-relaxed font-medium text-sm">
-                      Participate in our exclusive giveaway and stand a chance to win big rewards!
-                    </p>
+
+                  <p className="text-sm text-black/80 mb-6">
+                    Watch the cinematic: memecoin characters try every tactic to take Peponk down — but he endures. It's a short tale of persistence, community, and steady wins.
+                  </p>
+
+                  <div className="grid sm:grid-cols-3 gap-4 mb-6">
+                    <div className="flex items-start gap-3">
+                      <ShieldCheck className="w-6 h-6 text-accent mt-1" />
+                      <div>
+                        <div className="text-sm font-semibold">Inescapable</div>
+                        <div className="text-xs text-black/70">Built to resist the noise and attacks.</div>
+                      </div>
+                    </div>
+
+                    <div className="flex items-start gap-3">
+                      <Zap className="w-6 h-6 text-primary mt-1" />
+                      <div>
+                        <div className="text-sm font-semibold">Battle-Proven</div>
+                        <div className="text-xs text-black/70">A cinematic showcase of Peponk's unstoppable spirit.</div>
+                      </div>
+                    </div>
+
+                    <div className="flex items-start gap-3">
+                      <Users className="w-6 h-6 text-secondary mt-1" />
+                      <div>
+                        <div className="text-sm font-semibold">Community-Driven</div>
+                        <div className="text-xs text-black/70">Powered by people, not quick hype.</div>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-3">
-                  <div className="bg-primary/20 rounded-full p-2 flex-shrink-0">
-                    <Zap className="w-6 h-6 sm:w-7 sm:h-7 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="text-lg sm:text-xl font-bold text-black mb-2">Easy to Enter</h3>
-                    <p className="text-black leading-relaxed font-medium text-sm">
-                      Simply watch the video and follow the instructions to enter the giveaway.
-                    </p>
-                  </div>
-                </div>
+                <div className="flex flex-col sm:flex-row gap-3">
+                  <Button size="lg" asChild className="bg-accent text-charcoal font-black">
+                    <a href="https://youtu.be/QmkVwna0hOk?si=8CEK73fgmDgzM8Bs" target="_blank" rel="noopener noreferrer">
+                      <Play className="mr-2 h-5 w-5 inline-block" /> Watch the Battle
+                    </a>
+                  </Button>
 
-                <div className="flex items-start gap-3">
-                  <div className="bg-secondary/20 rounded-full p-2 flex-shrink-0">
-                    <Trophy className="w-6 h-6 sm:w-7 sm:h-7 text-secondary" />
-                  </div>
-                  <div>
-                    <h3 className="text-lg sm:text-xl font-bold text-black mb-2">Multiple Winners</h3>
-                    <p className="text-black leading-relaxed font-medium text-sm">
-                      Multiple lucky winners will be selected from our community!
-                    </p>
-                  </div>
+                  <Button size="lg" asChild className="bg-white/90 text-accent font-black">
+                    <a href="https://phantom.com/tokens/solana/Gqqdgfkn7bcsuBQZEk9oMBkqCv1bRXvPmTLs3sQ9pump" target="_blank" rel="noopener noreferrer">
+                      <Link className="mr-2 h-5 w-5 inline-block" /> Trade $PEPONK on Phantom
+                    </a>
+                  </Button>
                 </div>
               </div>
             </div>
           </Card>
-
-          {/* CTA Button Section */}
-          <div className="text-center">
-            <Button
-              size="lg"
-              className="bg-accent hover:bg-accent hover:brightness-110 text-charcoal font-black text-xl md:text-2xl px-12 py-7 md:px-16 md:py-8 rounded-full shadow-[0_8px_32px_rgba(255,217,61,0.6)] hover:shadow-[0_12px_40px_rgba(255,217,61,0.8)] transition-all hover:scale-110 hover:-translate-y-2 duration-300 group"
-              asChild
-            >
-              <a href="https://www.youtube.com/watch?v=xMHJGd3wwZk" target="_blank" rel="noopener noreferrer">
-                <Play className="mr-3 h-7 w-7 group-hover:scale-125 transition-transform" />
-                Watch & Enter Now
-              </a>
-            </Button>
-
-            {/* Additional decorative sparkles */}
-            <div className="flex justify-center gap-3 mt-8">
-              {[...Array(5)].map((_, i) => (
-                <Sparkles
-                  key={i}
-                  className="w-6 h-6 text-accent animate-pulse"
-                  style={{ animationDelay: `${i * 0.2}s` }}
-                />
-              ))}
-            </div>
-          </div>
         </div>
       </div>
     </section>

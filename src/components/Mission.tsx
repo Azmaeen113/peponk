@@ -17,7 +17,8 @@ const Mission = () => {
           {/* Text Content */}
           <div className="space-y-6 animate-fade-in-up text-center md:text-left">
             <h2 className="text-4xl md:text-5xl font-bold">
-              <span className="text-foreground drop-shadow-[0_2px_4px_rgba(0,0,0,0.1)]">Our Mission: No Shortcuts,{" "}</span>
+              <span className="text-foreground drop-shadow-[0_2px_4px_rgba(0,0,0,0.1)] block">Our Mission:</span>
+              <span className="text-foreground drop-shadow-[0_2px_4px_rgba(0,0,0,0.1)] block">No Shortcuts,</span>
               <span 
                 style={{ 
                   background: 'linear-gradient(to right, rgb(255, 107, 53), rgb(255, 217, 61), rgb(127, 217, 87))',
