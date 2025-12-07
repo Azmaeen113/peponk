@@ -55,6 +55,11 @@ const Tokenomics = () => {
 
   return (
     <section id="tokenomics" className="py-16 sm:py-20 bg-dark-bg text-white relative overflow-hidden scroll-mt-28">
+      {/* Wavy divider top - always visible */}
+      <svg className="w-full h-20" preserveAspectRatio="none" viewBox="0 0 1440 80">
+        <path fill="hsl(var(--dark-bg))" d="M0,0 C240,54 480,54 720,27 C960,0 1200,0 1440,27 L1440,80 L0,80 Z" />
+      </svg>
+
       <div className="absolute inset-0 bg-gradient-cool opacity-10" />
       
       <div className="container mx-auto px-4 relative z-10">

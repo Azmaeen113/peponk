@@ -77,7 +77,13 @@ const Roadmap = () => {
   };
 
   return (
+
     <section id="roadmap" className="py-16 sm:py-20 relative overflow-hidden scroll-mt-28">
+      {/* Wavy divider top - always visible */}
+      <svg className="w-full h-20" preserveAspectRatio="none" viewBox="0 0 1440 80">
+        <path fill="hsl(var(--primary))" d="M0,0 C240,54 480,54 720,27 C960,0 1200,0 1440,27 L1440,80 L0,80 Z" />
+      </svg>
+
       {/* Animated gradient background - Blue → Pink → Theme Colors */}
       <div className="absolute inset-0 roadmap-gradient-animated" />
       <div className="container mx-auto px-4 relative z-10">

@@ -3,6 +3,11 @@ import peponkLogo from "@/assets/peponk-logo.png";
 const Mission = () => {
   return (
     <section id="mission" className="py-20 bg-background relative overflow-hidden scroll-mt-28">
+      {/* Wavy divider top - always visible */}
+      <svg className="w-full h-20" preserveAspectRatio="none" viewBox="0 0 1440 80">
+        <path fill="hsl(var(--background))" d="M0,0 C240,54 480,54 720,27 C960,0 1200,0 1440,27 L1440,80 L0,80 Z" />
+      </svg>
+
       {/* Organic blob shapes */}
       <div className="absolute top-20 left-10 w-64 h-64 bg-accent/10 rounded-full blur-3xl animate-pulse" />
       <div className="absolute bottom-20 right-10 w-96 h-96 bg-secondary/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1s" }} />
