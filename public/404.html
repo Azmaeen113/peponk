@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Redirecting…</title>
+    <meta name="robots" content="noindex" />
+    <style>html,body{height:100%;margin:0}</style>
+  </head>
+  <body>
+    <script>
+      // On 404, fetch the SPA index and replace the document so the client app can handle the route.
+      (function(){
+        try {
+          fetch('/index.html')
+            .then(function(res){ if(!res.ok) throw new Error('index fetch failed'); return res.text(); })
+            .then(function(html){
+              document.open();
+              document.write(html);
+              document.close();
+              // Keep the original path in the address bar so the SPA can read it.
+              history.replaceState({}, '', location.pathname + location.search + location.hash);
+            })
+            .catch(function(){
+              // If fetch fails, fall back to root
+              location.replace('/');
+            });
+        } catch (e) {
+          location.replace('/');
+        }
+      })();
+    </script>
+  </body>
+</html>
