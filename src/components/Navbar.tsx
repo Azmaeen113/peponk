@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, FileText } from "lucide-react";
 
 const navItems = [
   { label: "Home", href: "/" },
@@ -60,9 +60,10 @@ const Navbar = () => {
             href={"/Peponk%20Whitepaper.pdf"}
             target="_blank"
             rel="noopener noreferrer"
-            className="ml-2 px-5 py-2 rounded-full border border-black text-black font-bold hover:bg-black hover:text-white transition-colors"
+            className="ml-2 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-primary to-secondary text-white font-bold shadow-lg transform transition-transform duration-200 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-primary/30 border border-black"
           >
-            Whitepaper
+            <FileText className="w-4 h-4" />
+            <span>Whitepaper</span>
           </a>
           <a
             href={tradeLink}
@@ -99,16 +100,17 @@ const Navbar = () => {
               </a>
             ))}
             <a
-              href={"/whitepaper"}
+              href={"/Peponk%20Whitepaper.pdf"}
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={(e) => {
-                e.preventDefault();
-                // open PDF in new tab and close menu
-                window.open("/Peponk%20Whitepaper.pdf", "_blank");
+                // close mobile menu after opening
                 handleNavigate();
               }}
-              className="mt-2 px-5 py-2 rounded-full border border-white text-center font-bold hover:bg-white hover:text-black transition-colors"
+              className="mt-2 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-primary to-secondary text-white font-bold shadow-md text-center hover:scale-105 transition-transform duration-150 focus:outline-none focus:ring-4 focus:ring-primary/30 border border-black"
             >
-              Whitepaper
+              <FileText className="w-4 h-4" />
+              <span>Whitepaper</span>
             </a>
             <a
               href={tradeLink}
