@@ -1,9 +1,8 @@
 import { Button } from "@/components/ui/button";
-import { TrendingUp } from "lucide-react";
 
 const About = () => {
   return (
-    <section id="about" className="py-20 bg-gradient-warm relative overflow-hidden scroll-mt-28">
+    <section id="about" className="py-12 bg-gradient-warm relative overflow-hidden scroll-mt-28">
       {/* Wavy divider top */}
       <div className="absolute top-0 left-0 right-0 h-16 bg-background">
         <svg className="absolute bottom-0 w-full h-16" preserveAspectRatio="none" viewBox="0 0 1440 54">
@@ -11,7 +10,7 @@ const About = () => {
         </svg>
       </div>
 
-      <div className="container mx-auto px-4 py-16 relative z-10">
+  <div className="container mx-auto px-4 pt-12 pb-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in-up">
           {/* Pure black text for high contrast */}
           <h2 className="text-4xl md:text-5xl font-black text-black leading-tight drop-shadow-[0_2px_4px_rgba(255,255,255,0.3)]">
@@ -21,16 +20,11 @@ const About = () => {
           {/* Pure black text for all content */}
           <div className="prose prose-lg text-black max-w-none space-y-6 text-lg leading-relaxed">
             <p className="drop-shadow-[0_1px_2px_rgba(255,255,255,0.2)]">
-              <span className="font-bold text-black">PEPONK is a small meme born in the chaos of crypto</span>, 
-              standing apart from the noise and hype. While others chase quick gains, Peponk moves with 
-              <span className="font-bold text-accent"> steady purpose</span>, no shortcuts, just consistent progress.
+              Peponk is a community driven digital asset project that blends meme culture with real utility.
             </p>
 
             <p className="drop-shadow-[0_1px_2px_rgba(255,255,255,0.2)]">
-              Its strength comes not from wealth or charts, but from 
-              <span className="font-bold text-secondary"> patience, honesty, and community</span>. 
-              PEPONK proves that real growth takes time, and even the quietest frog can make a lasting impact 
-              when it moves with intention.
+              Our mission is to build a recognizable, community-powered brand that evolves beyond a traditional memecoin. The project focuses on digital engagement, creative branding, and the development of simple tools and experiences for holders. Peponk represents a growing ecosystem built around transparency, community participation, and long-term vision.
             </p>
           </div>
 
@@ -43,17 +37,19 @@ const About = () => {
             </p>
 
             <div className="pt-6">
-              {/* Enhanced button with better shadows and hover effects */}
-              <Button
-                size="lg"
-                className="bg-white hover:bg-white hover:brightness-105 text-primary font-bold text-lg px-10 py-6 rounded-full shadow-[0_4px_16px_rgba(0,0,0,0.25)] hover:shadow-[0_6px_20px_rgba(0,0,0,0.35)] transition-all hover:scale-105 hover:-translate-y-1"
-                asChild
-              >
-                <a href="https://dexscreener.com/solana/EVoEhwNhNTsAba6kKNRVV1Bovzbs8XapMCncv8CeMrcv" target="_blank" rel="noopener noreferrer">
-                  <TrendingUp className="mr-2 h-5 w-5" />
-                  Start Trading Now
-                </a>
-              </Button>
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <Button size="lg" asChild className="bg-accent text-white font-black px-8 py-4 rounded-full shadow-[0_6px_18px_rgba(0,0,0,0.18)] hover:scale-[1.02] transition-transform">
+                  <a href="https://youtu.be/QmkVwna0hOk?si=8CEK73fgmDgzM8Bs" target="_blank" rel="noopener noreferrer">
+                    Watch the Battle
+                  </a>
+                </Button>
+
+                <Button size="lg" asChild className="bg-white hover:bg-white text-primary font-bold px-8 py-4 rounded-full border border-[#e6e6e6] shadow-sm">
+                  <a href="https://phantom.com/tokens/solana/Gqqdgfkn7bcsuBQZEk9oMBkqCv1bRXvPmTLs3sQ9pump" target="_blank" rel="noopener noreferrer">
+                    Trade $PEPONK on Phantom
+                  </a>
+                </Button>
+              </div>
             </div>
           </div>
         </div>

@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Play, ShieldCheck, Users, Zap, Link } from "lucide-react";
 import { Card } from "@/components/ui/card";
-import peponkLogo from "@/assets/peponk-logo.png";
+// use public image for avatar
 
 const GiveawayBanner = () => {
   return (
@@ -42,7 +42,7 @@ const GiveawayBanner = () => {
               <div className="p-6 sm:p-8 flex flex-col justify-between bg-white">
                 <div>
                   <div className="flex items-center gap-3 mb-4">
-                    <img src={peponkLogo} alt="Peponk" className="w-12 h-12 rounded-full shadow-sm" />
+                    <img src="/601c845a-7586-4d3e-8ede-fcea77c2c963.png" alt="Peponk" className="w-12 h-12 rounded-full shadow-sm" />
                     <div>
                       <h3 className="text-lg font-bold">Peponk — Inescapable</h3>
                       <p className="text-sm text-black/70">A symbol of resilience and steady progress.</p>

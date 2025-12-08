@@ -6,7 +6,6 @@ import Tokenomics from "@/components/Tokenomics";
 import Roadmap from "@/components/Roadmap";
 import SupplyInfo from "@/components/SupplyInfo";
 import About from "@/components/About";
-import GiveawayBanner from "@/components/GiveawayBanner";
 import Social from "@/components/Social";
 import Footer from "@/components/Footer";
 import FloatingButton from "@/components/FloatingButton";
@@ -66,8 +65,7 @@ const Index = () => {
       <Tokenomics />
       <Roadmap />
       <SupplyInfo />
-      <About />
-      <GiveawayBanner />
+  <About />
       <Social />
       <Footer />
       <FloatingButton />

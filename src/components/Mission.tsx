@@ -1,4 +1,4 @@
-import peponkLogo from "@/assets/peponk-logo.png";
+// using public image for spinning logo
 
 const Mission = () => {
   return (
@@ -46,7 +46,7 @@ const Mission = () => {
             <div className="relative">
               <div className="absolute inset-0 bg-primary/20 rounded-full blur-2xl animate-glow" />
               <img
-                src={peponkLogo}
+                src="/601c845a-7586-4d3e-8ede-fcea77c2c963.png"
                 alt="PEPONK Logo"
                 className="relative w-full max-w-md logo-spin drop-shadow-2xl"
               />
