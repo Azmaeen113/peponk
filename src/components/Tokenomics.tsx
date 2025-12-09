@@ -54,16 +54,16 @@ const Tokenomics = () => {
   ];
 
   return (
-    <section id="tokenomics" className="py-16 sm:py-20 bg-dark-bg text-white relative overflow-hidden scroll-mt-28">
-      {/* Wavy divider top - always visible */}
-      <svg className="w-full h-20" preserveAspectRatio="none" viewBox="0 0 1440 80">
+  <section id="tokenomics" className="py-8 sm:py-20 bg-dark-bg text-white relative overflow-hidden scroll-mt-28">
+  {/* Wavy divider top - lower height on mobile */}
+  <svg className="w-full h-12 sm:h-20" preserveAspectRatio="none" viewBox="0 0 1440 80">
         <path fill="hsl(var(--dark-bg))" d="M0,0 C240,54 480,54 720,27 C960,0 1200,0 1440,27 L1440,80 L0,80 Z" />
       </svg>
 
       <div className="absolute inset-0 bg-gradient-cool opacity-10" />
       
       <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center mb-12 sm:mb-16 animate-fade-in">
+  <div className="text-center mb-8 sm:mb-12 animate-fade-in">
           <h2 className="text-3xl md:text-5xl font-black mb-3 sm:mb-4">
             <span className="bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent drop-shadow-[0_2px_8px_rgba(0,0,0,0.3)]">
               Tokenomics
@@ -76,7 +76,7 @@ const Tokenomics = () => {
         </div>
 
         {/* Tokenomics Image - Larger size */}
-        <div className="flex justify-center mb-12 sm:mb-16 animate-scale-in">
+  <div className="flex justify-center mb-8 sm:mb-12 animate-scale-in">
           <div className="relative max-w-2xl md:max-w-3xl lg:max-w-4xl w-full">
             <img
               src="/57E1B625-6100-43F7-948C-B4C46B2C7907.jpeg"

@@ -78,16 +78,16 @@ const Roadmap = () => {
 
   return (
 
-    <section id="roadmap" className="py-16 sm:py-20 relative overflow-hidden scroll-mt-28">
-      {/* Wavy divider top - always visible */}
-      <svg className="w-full h-20" preserveAspectRatio="none" viewBox="0 0 1440 80">
+  <section id="roadmap" className="py-8 sm:py-20 relative overflow-hidden scroll-mt-28">
+  {/* Wavy divider top - lower height on mobile */}
+  <svg className="w-full h-12 sm:h-20" preserveAspectRatio="none" viewBox="0 0 1440 80">
         <path fill="hsl(var(--primary))" d="M0,0 C240,54 480,54 720,27 C960,0 1200,0 1440,27 L1440,80 L0,80 Z" />
       </svg>
 
       {/* Animated gradient background - Blue → Pink → Theme Colors */}
       <div className="absolute inset-0 roadmap-gradient-animated" />
       <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center mb-12 sm:mb-16 animate-fade-in">
+  <div className="text-center mb-8 sm:mb-12 animate-fade-in">
           <h2 className="text-3xl md:text-5xl font-bold mb-3 sm:mb-4 text-black drop-shadow-[0_2px_8px_rgba(255,255,255,0.5)]">
             Roadmap
           </h2>

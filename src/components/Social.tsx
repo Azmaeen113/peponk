@@ -31,16 +31,16 @@ const Social = () => {
   ];
 
   return (
-    <section id="community" className="py-16 sm:py-20 bg-dark-bg text-white relative overflow-hidden scroll-mt-28">
-      {/* Wavy divider top - always visible */}
-      <svg className="w-full h-20" preserveAspectRatio="none" viewBox="0 0 1440 80">
+  <section id="community" className="py-8 sm:py-20 bg-dark-bg text-white relative overflow-hidden scroll-mt-28">
+  {/* Wavy divider top - lower height on mobile */}
+  <svg className="w-full h-12 sm:h-20" preserveAspectRatio="none" viewBox="0 0 1440 80">
         <path fill="hsl(var(--dark-bg))" d="M0,0 C240,54 480,54 720,27 C960,0 1200,0 1440,27 L1440,80 L0,80 Z" />
       </svg>
 
       <div className="absolute inset-0 bg-gradient-vibrant opacity-5" />
       
       <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center mb-12 sm:mb-16 animate-fade-in">
+  <div className="text-center mb-8 sm:mb-12 animate-fade-in">
           <h2 className="text-3xl md:text-5xl font-black mb-3 sm:mb-4">
             <span className="bg-gradient-to-r from-primary via-secondary to-cyan bg-clip-text text-transparent drop-shadow-[0_2px_8px_rgba(0,0,0,0.3)]">
               Join the Swamp
@@ -53,7 +53,7 @@ const Social = () => {
         </div>
 
         {/* Business Frog Image - Vertical float with rotation */}
-        <div className="flex justify-center mb-10 sm:mb-12 animate-scale-in">
+  <div className="flex justify-center mb-6 sm:mb-8 animate-scale-in">
           <div className="relative">
             <div className="absolute inset-0 bg-primary/30 blur-3xl animate-pulse" />
             <img

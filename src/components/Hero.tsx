@@ -27,10 +27,10 @@ const Hero = () => {
         ))}
       </div>
 
-      <div className="relative z-10 container mx-auto px-4 py-20">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
+      <div className="relative z-10 container mx-auto px-4 py-6 sm:py-20">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
           {/* Text Content */}
-          <div className="flex-1 text-center lg:text-left space-y-8 animate-fade-in">
+          <div className="flex-1 text-center lg:text-left space-y-6 animate-fade-in">
             <div className="space-y-4">
               <img
                 src="/top%20peponk%20title.png"
