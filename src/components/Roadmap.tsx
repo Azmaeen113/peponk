@@ -26,7 +26,7 @@ const Roadmap = () => {
     {
       phase: 3,
       title: "AI Agent Integration",
-        status: "current",
+      status: "completed",
       items: [
         "Build Peponk AI agent prototype",
         "Integrate agent into ecosystem operations",
@@ -36,7 +36,7 @@ const Roadmap = () => {
     {
       phase: 4,
       title: "Strategic Collaborations",
-      status: "upcoming",
+      status: "current",
       items: [
         "Partner with like-minded projects",
         "Expand reach with co-marketing pushes",
