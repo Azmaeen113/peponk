@@ -65,7 +65,7 @@ const Tokenomics = () => {
       <div className="container mx-auto px-4 relative z-10">
   <div className="text-center mb-8 sm:mb-12 animate-fade-in">
           <h2 className="text-3xl md:text-5xl font-black mb-3 sm:mb-4">
-            <span className="bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent drop-shadow-[0_2px_8px_rgba(0,0,0,0.3)]">
+            <span className="text-primary drop-shadow-[0_2px_8px_rgba(0,0,0,0.3)]">
               Tokenomics
             </span>
           </h2>

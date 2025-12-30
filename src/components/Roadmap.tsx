@@ -94,7 +94,7 @@ const Roadmap = () => {
           </h2>
           {/* Enhanced contrast for text on cyan background */}
           <p className="text-lg sm:text-xl text-black font-semibold drop-shadow-[0_2px_4px_rgba(255,255,255,0.5)]">
-            Our journey to the moon, one hop at a time
+            Our journey to the moon,<br />One hop at a time.
           </p>
         </div>
 
