@@ -1,4 +1,5 @@
 // using public image for spinning logo
+import peponkNew from "@/assets/peponk new.png";
 
 const Mission = () => {
   return (
@@ -17,19 +18,7 @@ const Mission = () => {
           {/* Text Content */}
           <div className="space-y-6 animate-fade-in-up text-center md:text-left">
             <h2 className="text-4xl md:text-5xl font-bold">
-              <span className="text-foreground drop-shadow-[0_2px_4px_rgba(0,0,0,0.1)] block">Our Mission:</span>
-              <span className="text-foreground drop-shadow-[0_2px_4px_rgba(0,0,0,0.1)] block">No Shortcuts,</span>
-              <span 
-                style={{ 
-                  background: 'linear-gradient(to right, rgb(255, 107, 53), rgb(255, 217, 61), rgb(127, 217, 87))',
-                  WebkitBackgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent',
-                  backgroundClip: 'text',
-                  display: 'inline-block',
-                }}
-              >
-                Just Steady Hops Forward
-              </span>
+              <span className="text-primary drop-shadow-[0_2px_4px_rgba(0,0,0,0.1)] block">Our Mission</span>
             </h2>
             
             {/* Enhanced contrast for text on light background */}
@@ -44,9 +33,8 @@ const Mission = () => {
           {/* Character Illustration - Spinning effect */}
           <div className="flex justify-center animate-scale-in">
             <div className="relative">
-              <div className="absolute inset-0 bg-primary/20 rounded-full blur-2xl animate-glow" />
               <img
-                src="/601c845a-7586-4d3e-8ede-fcea77c2c963.png"
+                src={peponkNew}
                 alt="PEPONK Logo"
                 className="relative w-full max-w-md logo-spin drop-shadow-2xl"
               />

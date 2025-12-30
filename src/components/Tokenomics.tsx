@@ -79,7 +79,7 @@ const Tokenomics = () => {
   <div className="flex justify-center mb-8 sm:mb-12 animate-scale-in">
           <div className="relative max-w-2xl md:max-w-3xl lg:max-w-4xl w-full">
             <img
-              src="/57E1B625-6100-43F7-948C-B4C46B2C7907.jpeg"
+              src="/Untitled design (2).svg"
               alt="Tokenomics Visualization"
               className="w-full h-auto rounded-2xl shadow-2xl object-contain"
             />

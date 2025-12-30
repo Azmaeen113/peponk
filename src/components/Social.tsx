@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card";
-import { MessageCircle, Twitter, TrendingUp, Mail } from "lucide-react";
+import { MessageCircle, Twitter, TrendingUp, Mail, Github } from "lucide-react";
 import peponkBusiness from "@/assets/peponk-business.jpeg";
 
 const Social = () => {
@@ -27,6 +27,14 @@ const Social = () => {
       color: "hsl(102, 85%, 65%)", // Bright vibrant lime green
       cta: "Track Stats",
       link: "https://dexscreener.com/solana/evoehwnhntsaba6kknrvv1bovzbs8xapmcncv8cemrcv",
+    },
+    {
+      name: "GitHub",
+      icon: Github,
+      // Vibrant purple for GitHub
+      color: "hsl(271, 85%, 65%)", // Bright vibrant purple
+      cta: "View Source",
+      link: "https://github.com/peponk",
     },
   ];
 

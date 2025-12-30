@@ -57,7 +57,7 @@ const Navbar = () => {
             </a>
           ))}
           <a
-            href={"/Peponk%20Whitepaper.pdf"}
+            href="https://peponk.gitbook.io/docs"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-primary transition-colors"
@@ -99,7 +99,7 @@ const Navbar = () => {
               </a>
             ))}
             <a
-              href={"/Peponk%20Whitepaper.pdf"}
+              href="https://peponk.gitbook.io/docs"
               target="_blank"
               rel="noopener noreferrer"
               onClick={(e) => {

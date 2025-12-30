@@ -33,15 +33,7 @@ const SupplyInfo = () => {
         {/* Enhanced card with better borders and shadows */}
         <Card className="max-w-4xl mx-auto p-6 sm:p-8 md:p-12 bg-gradient-to-br from-card to-card/50 backdrop-blur-sm border-2 border-primary/30 shadow-[0_8px_24px_rgba(0,0,0,0.15)] animate-scale-in rounded-lg">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-6 sm:mb-8">
-            <span 
-              className="bg-clip-text text-transparent drop-shadow-[0_2px_6px_rgba(0,0,0,0.2)]"
-              style={{
-                background: 'linear-gradient(to right, rgb(255, 107, 53), rgb(255, 217, 61), rgb(127, 217, 87))',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
-                backgroundClip: 'text',
-              }}
-            >
+            <span className="text-primary drop-shadow-[0_2px_6px_rgba(0,0,0,0.2)]">
               Supply Information
             </span>
           </h2>

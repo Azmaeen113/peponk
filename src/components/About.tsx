@@ -20,7 +20,7 @@ const About = () => {
           {/* Pure black text for all content */}
           <div className="prose prose-lg text-black max-w-none space-y-6 text-lg leading-relaxed">
             <p className="drop-shadow-[0_1px_2px_rgba(255,255,255,0.2)]">
-              Peponk is a community driven digital asset project that blends meme culture with real utility.
+              Peponk LLC is a community driven digital asset project that blends meme culture with real utility.
             </p>
 
             <p className="drop-shadow-[0_1px_2px_rgba(255,255,255,0.2)]">

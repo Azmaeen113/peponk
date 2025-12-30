@@ -1,4 +1,4 @@
-import { MessageCircle, Twitter, TrendingUp } from "lucide-react";
+import { MessageCircle, Twitter, TrendingUp, Github } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -82,6 +82,14 @@ const Footer = () => {
                 className="w-10 h-10 rounded-full bg-white/20 hover:bg-primary flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-[0_4px_12px_rgba(255,107,53,0.4)]"
               >
                 <TrendingUp className="w-5 h-5" />
+              </a>
+              <a
+                href="https://github.com/peponk"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-white/20 hover:bg-primary flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-[0_4px_12px_rgba(255,107,53,0.4)]"
+              >
+                <Github className="w-5 h-5" />
               </a>
             </div>
           </div>
