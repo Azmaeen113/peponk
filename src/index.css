@@ -60,16 +60,16 @@ All colors MUST be HSL.
     --shadow-elegant: 0 10px 40px -10px hsla(var(--primary), 0.25);
   }
 
-  /* Animated roadmap gradient - Orange tones */
+  /* Animated roadmap gradient - Orange to Green */
   .roadmap-gradient-orange {
     background: linear-gradient(
       135deg,
-      #ff8c42 0%,
-      #f98801 20%,
+      #f98801 0%,
+      #ff8c42 20%,
       #ffb347 40%,
-      #ffffff 60%,
-      #ffd93d 80%,
-      #ff6b35 100%
+      #a8d96e 60%,
+      #8fd157 80%,
+      #7fd957 100%
     );
     background-size: 300% 300%;
     animation: roadmap-gradient-shift 8s ease infinite;
