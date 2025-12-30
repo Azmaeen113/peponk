@@ -10,19 +10,27 @@ const Hero = () => {
       className="relative min-h-screen flex flex-col items-center justify-center lg:justify-end overflow-hidden scroll-mt-28"
       style={{ backgroundColor: "#f98801" }}
     >
-      <div className="container mx-auto px-4 py-6 lg:py-12 flex flex-col items-center lg:items-start w-full">
+      <div className="container mx-auto px-4 py-6 lg:py-12 flex flex-col items-center lg:items-start w-full h-full">
         {/* GIF */}
-        <div className="w-full flex items-center justify-center mb-8 lg:absolute lg:inset-0 lg:mb-0">
+        <div className="relative w-full flex items-center justify-center mb-0 lg:absolute lg:inset-0 lg:mb-0 flex-1">
           <img
             src={heroGif}
             alt="Background Animation"
             className="w-full h-auto max-w-3xl object-contain lg:max-w-full lg:h-full"
           />
+          
+          {/* Text overlaid at bottom of GIF on mobile */}
+          <div className="absolute bottom-4 left-0 right-0 text-center lg:hidden px-4">
+            <p className="text-lg text-black max-w-2xl mx-auto leading-relaxed drop-shadow-[0_1px_2px_rgba(0,0,0,0.1)]">
+              The memecoin that's hopping straight to the moon{" "}
+              <Rocket className="inline-block w-6 h-6 text-secondary animate-bounce" />
+            </p>
+          </div>
         </div>
 
         {/* Text Content and Buttons */}
-        <div className="text-center space-y-6 animate-fade-in lg:relative lg:z-10 lg:w-full">
-            <div className="space-y-4">
+        <div className="text-center space-y-6 animate-fade-in lg:relative lg:z-10 lg:w-full mt-4">
+            <div className="space-y-4 hidden lg:block">
               <p className="sr-only">PEPONK - Where Memes Meet Million-Dollar Dreams</p>
               <p className="text-lg md:text-xl text-black max-w-2xl mx-auto leading-relaxed drop-shadow-[0_1px_2px_rgba(0,0,0,0.1)]">
                 The memecoin that's hopping straight to the moon{" "}

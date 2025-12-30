@@ -108,7 +108,7 @@ const Social = () => {
         {/* Contact Info - Enhanced contrast */}
         <div className="text-center mt-12 animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
           <a
-            href="mailto:dr.devv2002@gmail.com"
+            href="mailto:support@peponk.io"
             className="inline-flex items-center gap-2 text-white hover:text-primary transition-colors leading-relaxed cursor-pointer"
           >
             <Mail className="w-5 h-5" />
