@@ -36,8 +36,7 @@ const Mission = () => {
               <img
                 src={peponkNew}
                 alt="PEPONK Logo"
-                className="relative w-full max-w-xs logo-spin drop-shadow-2xl"
-                style={{ maxWidth: "75%" }}
+                className="relative w-full max-w-[200px] lg:max-w-[266px] logo-spin drop-shadow-2xl"
               />
             </div>
           </div>
