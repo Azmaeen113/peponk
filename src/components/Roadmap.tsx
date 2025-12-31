@@ -115,7 +115,7 @@ const Roadmap = () => {
 
                 {/* Content card with enhanced borders and shadows */}
                 <div className={`ml-20 sm:ml-24 md:ml-0 ${index % 2 === 0 ? "md:mr-[55%]" : "md:ml-[55%]"} w-full md:w-[45%]`}>
-                  <Card className="p-5 sm:p-6 hover:shadow-[0_8px_24px_rgba(0,0,0,0.15)] transition-all duration-300 border-2 border-primary/30 hover:border-primary/50 rounded-lg hover:-translate-y-1 bg-white/95 backdrop-blur-sm">
+                  <Card className="p-5 sm:p-6 hover:shadow-[0_8px_24px_rgba(0,0,0,0.15)] transition-all duration-300 border-2 border-black rounded-lg hover:-translate-y-1" style={{ backgroundColor: '#f98801', backdropFilter: 'blur(4px)' }}>
                     <div className="flex items-center gap-2.5 sm:gap-3 mb-3 sm:mb-4">
                       <span className="text-xs sm:text-sm font-bold text-white bg-primary px-3 py-1 rounded-full shadow-md">
                         Phase {phase.phase}
