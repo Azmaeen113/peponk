@@ -78,9 +78,10 @@ const Roadmap = () => {
 
   return (
 
-  <section id="roadmap" className="py-8 sm:py-20 relative overflow-hidden scroll-mt-28">
+  <section id="roadmap" className="py-8 sm:py-20 relative overflow-hidden scroll-mt-28 border-t-2 border-b-2 border-black">
 
-
+      {/* Dynamic animated orange gradient background */}
+      <div className="absolute inset-0 roadmap-gradient-bg pointer-events-none" aria-hidden="true" />
       {/* Animated grid of dots background */}
       <div className="absolute inset-0 roadmap-dots-bg pointer-events-none" aria-hidden="true" />
 
@@ -115,7 +116,7 @@ const Roadmap = () => {
 
                 {/* Content card with enhanced borders and shadows */}
                 <div className={`ml-20 sm:ml-24 md:ml-0 ${index % 2 === 0 ? "md:mr-[55%]" : "md:ml-[55%]"} w-full md:w-[45%]`}>
-                  <Card className="p-5 sm:p-6 hover:shadow-[0_8px_24px_rgba(0,0,0,0.15)] transition-all duration-300 border-2 border-black rounded-lg hover:-translate-y-1" style={{ backgroundColor: '#f98801', backdropFilter: 'blur(4px)' }}>
+                  <Card className="p-5 sm:p-6 hover:shadow-[0_8px_24px_rgba(0,0,0,0.15)] transition-all duration-300 border-2 border-black rounded-lg hover:-translate-y-1" style={{ backgroundColor: 'white' }}>
                     <div className="flex items-center gap-2.5 sm:gap-3 mb-3 sm:mb-4">
                       <span className="text-xs sm:text-sm font-bold text-white bg-primary px-3 py-1 rounded-full shadow-md">
                         Phase {phase.phase}

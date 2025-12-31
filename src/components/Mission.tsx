@@ -1,5 +1,5 @@
-// using public image for spinning logo
-import peponkNew from "@/assets/peponk new.png";
+// using public image for logo
+import lastSpinningLogo from "@/assets/last spinning logo.png";
 
 const Mission = () => {
   return (
@@ -30,13 +30,13 @@ const Mission = () => {
             </p>
           </div>
 
-          {/* Character Illustration - Spinning effect */}
+          {/* Character Illustration - Pulsing scale effect */}
           <div className="flex justify-center animate-scale-in">
             <div className="relative">
               <img
-                src={peponkNew}
+                src={lastSpinningLogo}
                 alt="PEPONK Logo"
-                className="relative w-full max-w-[200px] lg:max-w-[266px] logo-spin drop-shadow-2xl"
+                className="relative w-full max-w-[200px] lg:max-w-[266px] logo-pulse-dynamic drop-shadow-2xl"
               />
             </div>
           </div>

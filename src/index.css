@@ -60,7 +60,24 @@ All colors MUST be HSL.
     --shadow-elegant: 0 10px 40px -10px hsla(var(--primary), 0.25);
   }
 
-  /* Animated roadmap gradient - Orange to Green */
+  /* Dynamic animated orange gradient background */
+  .roadmap-gradient-bg {
+    background: linear-gradient(45deg, #ff6b35, #ff8c42, #ffa556, #ff6b35, #ff9d5c);
+    background-size: 400% 400%;
+    animation: roadmap-gradient-shift 8s ease infinite;
+  }
+
+  @keyframes roadmap-gradient-shift {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 
   /* Animated grid of dots for Roadmap background */
   .roadmap-dots-bg {
@@ -99,18 +116,18 @@ All colors MUST be HSL.
     animation: logo-pulse-scale 3s ease-in-out infinite;
   }
 
-  /* Mission Logo - Spinning effect */
-  @keyframes logo-spin {
-    0% {
-      transform: rotate(0deg);
+  /* Mission Logo - Dynamic pulsing scale effect */
+  @keyframes logo-pulse-dynamic {
+    0%, 100% {
+      transform: scale(1);
     }
-    100% {
-      transform: rotate(360deg);
+    50% {
+      transform: scale(1.08);
     }
   }
   
-  .logo-spin {
-    animation: logo-spin 8s linear infinite;
+  .logo-pulse-dynamic {
+    animation: logo-pulse-dynamic 2.5s ease-in-out infinite;
   }
 
   /* Social Business Image - Vertical float with gentle rotation */
