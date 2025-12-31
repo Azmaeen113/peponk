@@ -98,7 +98,7 @@ const Footer = () => {
         {/* Bottom Bar - Enhanced contrast */}
         <div className="border-t border-white/20 pt-8 space-y-4">
           <p className="text-center text-white text-sm leading-relaxed">
-            © {currentYear} PEPONK. Built by the community, for the community.
+            © 2025 Peponk LLC. All rights reserved.
           </p>
           <p className="text-center text-white/80 text-xs max-w-3xl mx-auto leading-relaxed">
             Disclaimer: Cryptocurrency investments carry risk. PEPONK is a meme token created for entertainment 

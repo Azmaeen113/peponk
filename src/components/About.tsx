@@ -3,14 +3,7 @@ import { Button } from "@/components/ui/button";
 const About = () => {
   return (
     <section id="about" className="py-12 bg-gradient-warm relative overflow-hidden scroll-mt-28">
-      {/* Wavy divider top */}
-      <div className="absolute top-0 left-0 right-0 h-16 bg-background">
-        <svg className="absolute bottom-0 w-full h-16" preserveAspectRatio="none" viewBox="0 0 1440 54">
-          <path fill="hsl(var(--primary))" d="M0,0 C240,54 480,54 720,27 C960,0 1200,0 1440,27 L1440,54 L0,54 Z" />
-        </svg>
-      </div>
-
-  <div className="container mx-auto px-4 pt-12 pb-6 relative z-10">
+      <div className="container mx-auto px-4 pt-12 pb-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in-up">
           {/* Pure black text for high contrast */}
           <h2 className="text-4xl md:text-5xl font-black text-black leading-tight drop-shadow-[0_2px_4px_rgba(255,255,255,0.3)]">

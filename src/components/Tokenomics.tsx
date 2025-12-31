@@ -54,18 +54,11 @@ const Tokenomics = () => {
   ];
 
   return (
-  <section id="tokenomics" className="py-8 sm:py-20 bg-dark-bg text-white relative overflow-hidden scroll-mt-28">
-  {/* Wavy divider top - lower height on mobile */}
-  <svg className="w-full h-12 sm:h-20" preserveAspectRatio="none" viewBox="0 0 1440 80">
-        <path fill="hsl(var(--dark-bg))" d="M0,0 C240,54 480,54 720,27 C960,0 1200,0 1440,27 L1440,80 L0,80 Z" />
-      </svg>
-
-      <div className="absolute inset-0 bg-gradient-cool opacity-10" />
-      
+  <section id="tokenomics" className="py-8 sm:py-20 relative overflow-hidden scroll-mt-28" style={{ backgroundColor: '#f98801' }}>
       <div className="container mx-auto px-4 relative z-10">
   <div className="text-center mb-8 sm:mb-12 animate-fade-in">
           <h2 className="text-3xl md:text-5xl font-black mb-3 sm:mb-4">
-            <span className="text-primary drop-shadow-[0_2px_8px_rgba(0,0,0,0.3)]">
+            <span style={{ color: '#00FF00' }} className="drop-shadow-[0_2px_8px_rgba(0,0,0,0.3)]">
               Tokenomics
             </span>
           </h2>

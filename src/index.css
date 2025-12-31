@@ -61,32 +61,25 @@ All colors MUST be HSL.
   }
 
   /* Animated roadmap gradient - Orange to Green */
-  .roadmap-gradient-orange {
-    background: linear-gradient(
-      135deg,
-      #f98801 0%,
-      #ff8c42 20%,
-      #ffb347 40%,
-      #a8d96e 60%,
-      #8fd157 80%,
-      #7fd957 100%
-    );
-    background-size: 300% 300%;
-    animation: roadmap-gradient-shift 8s ease infinite;
+
+  /* Animated grid of dots for Roadmap background */
+  .roadmap-dots-bg {
+    background-color: transparent;
+    background-image:
+      radial-gradient(circle, rgba(0,0,0,0.22) 2.2px, transparent 2.7px),
+      radial-gradient(circle, rgba(0,0,0,0.13) 2.2px, transparent 2.7px);
+    background-size: 40px 40px, 40px 40px;
+    background-position: 0 0, 20px 20px;
+    animation: roadmap-dots-move 2.5s linear infinite;
+    z-index: 0;
   }
 
-  @keyframes roadmap-gradient-shift {
+  @keyframes roadmap-dots-move {
     0% {
-      background-position: 0% 50%;
-    }
-    33% {
-      background-position: 100% 50%;
-    }
-    66% {
-      background-position: 200% 50%;
+      background-position: 0 0, 20px 20px;
     }
     100% {
-      background-position: 300% 50%;
+      background-position: 80px 80px, 120px 120px;
     }
   }
 
