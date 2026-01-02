@@ -23,7 +23,7 @@ const SupplyInfo = () => {
   ];
 
   return (
-  <section id="supply" className="py-8 sm:py-20 bg-background relative overflow-hidden scroll-mt-28">
+  <section id="supply" className="py-16 sm:py-28 bg-background relative overflow-hidden scroll-mt-28">
         <div className="container mx-auto px-4 relative z-10">
         {/* Enhanced card with better borders and shadows */}
         <Card className="max-w-4xl mx-auto p-6 sm:p-8 md:p-12 bg-gradient-to-br from-card to-card/50 backdrop-blur-sm border-2 border-primary/30 shadow-[0_8px_24px_rgba(0,0,0,0.15)] animate-scale-in rounded-lg">

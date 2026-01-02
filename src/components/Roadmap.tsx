@@ -78,7 +78,7 @@ const Roadmap = () => {
 
   return (
 
-  <section id="roadmap" className="py-8 sm:py-20 relative overflow-hidden scroll-mt-28">
+  <section id="roadmap" className="py-16 sm:py-28 relative overflow-hidden scroll-mt-28">
 
       {/* Dynamic animated orange gradient background */}
       <div className="absolute inset-0 roadmap-gradient-bg pointer-events-none" aria-hidden="true" />

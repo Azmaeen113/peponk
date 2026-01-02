@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 const About = () => {
   return (
-    <section id="about" className="py-12 bg-gradient-warm relative overflow-hidden scroll-mt-28">
+    <section id="about" className="py-16 sm:py-28 bg-gradient-warm relative overflow-hidden scroll-mt-28">
       <div className="container mx-auto px-4 pt-12 pb-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in-up">
           {/* Pure black text for high contrast */}

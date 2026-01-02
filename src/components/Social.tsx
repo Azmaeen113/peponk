@@ -39,7 +39,7 @@ const Social = () => {
   ];
 
   return (
-  <section id="community" className="py-8 sm:py-20 bg-dark-bg text-white relative overflow-hidden scroll-mt-28">
+  <section id="community" className="py-16 sm:py-28 bg-dark-bg text-white relative overflow-hidden scroll-mt-28">
   {/* Wavy divider top - lower height on mobile */}
   <svg className="w-full h-12 sm:h-20" preserveAspectRatio="none" viewBox="0 0 1440 80">
         <path fill="hsl(var(--dark-bg))" d="M0,0 C240,54 480,54 720,27 C960,0 1200,0 1440,27 L1440,80 L0,80 Z" />

@@ -54,7 +54,7 @@ const Tokenomics = () => {
   ];
 
   return (
-  <section id="tokenomics" className="py-8 sm:py-20 relative overflow-hidden scroll-mt-28" style={{ backgroundColor: '#f98801' }}>
+  <section id="tokenomics" className="py-16 sm:py-28 relative overflow-hidden scroll-mt-28" style={{ backgroundColor: '#f98801' }}>
       <div className="container mx-auto px-4 relative z-10">
   <div className="text-center mb-8 sm:mb-12 animate-fade-in">
           <h2 className="text-3xl md:text-5xl font-black mb-3 sm:mb-4">
