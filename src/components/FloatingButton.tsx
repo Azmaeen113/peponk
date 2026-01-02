@@ -11,7 +11,7 @@ const FloatingButton = () => {
         asChild
       >
         <a
-          href="https://dexscreener.com/solana/EVoEhwNhNTsAba6kKNRVV1Bovzbs8XapMCncv8CeMrcv"
+          href="https://dexscreener.com/solana/gqqdgfkn7bcsubqzek9ombkqcv1brxvpmtls3sq9pump"
           target="_blank"
           rel="noopener noreferrer"
         >

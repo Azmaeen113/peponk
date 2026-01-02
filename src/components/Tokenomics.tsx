@@ -152,6 +152,21 @@ const Tokenomics = () => {
           })}
         </div>
       </div>
+
+      {/* Wavy divider bottom with animated gradient */}
+      <svg className="absolute bottom-0 w-full h-8 sm:h-20" preserveAspectRatio="none" viewBox="0 0 1440 80">
+        <defs>
+          <linearGradient id="roadmapWaveGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stopColor="#ff6b35">
+              <animate attributeName="stop-color" values="#ff6b35;#ffa556;#ffc266;#ff6b35" dur="8s" repeatCount="indefinite" />
+            </stop>
+            <stop offset="100%" stopColor="#ffc266">
+              <animate attributeName="stop-color" values="#ffc266;#ff6b35;#ffa556;#ffc266" dur="8s" repeatCount="indefinite" />
+            </stop>
+          </linearGradient>
+        </defs>
+        <path fill="url(#roadmapWaveGradient)" d="M0,0 C240,54 480,54 720,27 C960,0 1200,0 1440,27 L1440,80 L0,80 Z" />
+      </svg>
     </section>
   );
 };

@@ -11,7 +11,7 @@ const navItems = [
   { label: "Community", href: "/community" },
 ];
 
-const tradeLink = "https://dexscreener.com/solana/EVoEhwNhNTsAba6kKNRVV1Bovzbs8XapMCncv8CeMrcv";
+const tradeLink = "https://dexscreener.com/solana/gqqdgfkn7bcsubqzek9ombkqcv1brxvpmtls3sq9pump";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);

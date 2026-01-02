@@ -48,6 +48,11 @@ const About = () => {
         </div>
       </div>
 
+      {/* Wavy divider bottom */}
+      <svg className="absolute bottom-0 w-full h-8 sm:h-20" preserveAspectRatio="none" viewBox="0 0 1440 80">
+        <path fill="hsl(var(--dark-bg))" d="M0,0 C240,54 480,54 720,27 C960,0 1200,0 1440,27 L1440,80 L0,80 Z" />
+      </svg>
+
     </section>
   );
 };

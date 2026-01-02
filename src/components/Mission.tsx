@@ -4,10 +4,6 @@ import lastSpinningLogo from "@/assets/last spinning logo.png";
 const Mission = () => {
   return (
   <section id="mission" className="py-8 sm:py-20 bg-background relative overflow-hidden scroll-mt-28">
-  {/* Wavy divider top - lower height on mobile */}
-  <svg className="w-full h-8 sm:h-20" preserveAspectRatio="none" viewBox="0 0 1440 80">
-        <path fill="hsl(var(--background))" d="M0,0 C240,54 480,54 720,27 C960,0 1200,0 1440,27 L1440,80 L0,80 Z" />
-      </svg>
 
       {/* Organic blob shapes */}
       <div className="absolute top-20 left-10 w-64 h-64 bg-accent/10 rounded-full blur-3xl animate-pulse" />
@@ -42,6 +38,11 @@ const Mission = () => {
           </div>
         </div>
       </div>
+
+      {/* Wavy divider bottom */}
+      <svg className="absolute bottom-0 w-full h-8 sm:h-20" preserveAspectRatio="none" viewBox="0 0 1440 80">
+        <path fill="#f98801" d="M0,0 C240,54 480,54 720,27 C960,0 1200,0 1440,27 L1440,80 L0,80 Z" />
+      </svg>
     </section>
   );
 };

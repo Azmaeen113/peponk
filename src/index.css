@@ -62,17 +62,23 @@ All colors MUST be HSL.
 
   /* Dynamic animated orange gradient background */
   .roadmap-gradient-bg {
-    background: linear-gradient(45deg, #ff6b35, #ff8c42, #ffa556, #ff6b35, #ff9d5c);
+    background: linear-gradient(-45deg, #ff6b35, #ff8c42, #ffa556, #ffc266, #ff6b35);
     background-size: 400% 400%;
-    animation: roadmap-gradient-shift 8s ease infinite;
+    animation: roadmap-gradient-shift 12s ease infinite;
   }
 
   @keyframes roadmap-gradient-shift {
     0% {
       background-position: 0% 50%;
     }
+    25% {
+      background-position: 50% 100%;
+    }
     50% {
       background-position: 100% 50%;
+    }
+    75% {
+      background-position: 50% 0%;
     }
     100% {
       background-position: 0% 50%;

@@ -14,7 +14,7 @@ const Footer = () => {
             </h3>
             {/* Enhanced contrast for text on dark background */}
             <p className="text-white text-sm leading-relaxed">
-              The memecoin that's hopping straight to the moon. Built by the community, for the community.
+              The frog that's hopping straight to the moon. Built by the community, for the community.
             </p>
           </div>
 
@@ -24,7 +24,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <a
-                  href="https://dexscreener.com/solana/EVoEhwNhNTsAba6kKNRVV1Bovzbs8XapMCncv8CeMrcv"
+                  href="https://dexscreener.com/solana/gqqdgfkn7bcsubqzek9ombkqcv1brxvpmtls3sq9pump"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white hover:text-primary transition-colors text-sm leading-relaxed hover:underline"
@@ -76,7 +76,7 @@ const Footer = () => {
                 <Twitter className="w-5 h-5" />
               </a>
               <a
-                href="https://dexscreener.com/solana/evoehwnhntsaba6kknrvv1bovzbs8xapmcncv8cemrcv"
+                href="https://dexscreener.com/solana/gqqdgfkn7bcsubqzek9ombkqcv1brxvpmtls3sq9pump"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-white/20 hover:bg-primary flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-[0_4px_12px_rgba(255,107,53,0.4)]"

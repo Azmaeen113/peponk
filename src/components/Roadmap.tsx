@@ -78,12 +78,10 @@ const Roadmap = () => {
 
   return (
 
-  <section id="roadmap" className="py-8 sm:py-20 relative overflow-hidden scroll-mt-28 border-t-2 border-b-2 border-black">
+  <section id="roadmap" className="py-8 sm:py-20 relative overflow-hidden scroll-mt-28">
 
       {/* Dynamic animated orange gradient background */}
       <div className="absolute inset-0 roadmap-gradient-bg pointer-events-none" aria-hidden="true" />
-      {/* Animated grid of dots background */}
-      <div className="absolute inset-0 roadmap-dots-bg pointer-events-none" aria-hidden="true" />
 
       <div className="container mx-auto px-4 relative z-10">
   <div className="text-center mb-8 sm:mb-12 animate-fade-in">
@@ -155,6 +153,11 @@ const Roadmap = () => {
           </div>
         </div>
       </div>
+
+      {/* Wavy divider bottom */}
+      <svg className="absolute bottom-0 w-full h-8 sm:h-20" preserveAspectRatio="none" viewBox="0 0 1440 80">
+        <path fill="hsl(var(--background))" d="M0,0 C240,54 480,54 720,27 C960,0 1200,0 1440,27 L1440,80 L0,80 Z" />
+      </svg>
     </section>
   );
 };

@@ -22,7 +22,7 @@ const Hero = () => {
           {/* Text overlaid at bottom of GIF on mobile */}
           <div className="absolute bottom-4 left-0 right-0 text-center lg:hidden px-4">
             <p className="text-lg text-black max-w-2xl mx-auto leading-relaxed drop-shadow-[0_1px_2px_rgba(0,0,0,0.1)]">
-              The memecoin that's hopping straight to the moon{" "}
+              The frog that's hopping straight to the moon{" "}
               <Rocket className="inline-block w-6 h-6 text-secondary animate-bounce" />
             </p>
           </div>
@@ -33,7 +33,7 @@ const Hero = () => {
             <div className="space-y-4 hidden lg:block">
               <p className="sr-only">PEPONK - Where Memes Meet Million-Dollar Dreams</p>
               <p className="text-lg md:text-xl text-black max-w-2xl mx-auto leading-relaxed drop-shadow-[0_1px_2px_rgba(0,0,0,0.1)]">
-                The memecoin that's hopping straight to the moon{" "}
+                The frog that's hopping straight to the moon{" "}
                 <Rocket className="inline-block w-6 h-6 text-secondary animate-bounce" />
               </p>
             </div>
@@ -45,7 +45,7 @@ const Hero = () => {
                 className="bg-secondary hover:bg-secondary hover:brightness-110 text-charcoal font-bold text-lg px-8 py-6 rounded-full shadow-[0_4px_16px_rgba(127,217,87,0.4)] hover:shadow-[0_6px_20px_rgba(127,217,87,0.6)] transition-all hover:scale-105 hover:-translate-y-1"
                 asChild
               >
-                <a href="https://dexscreener.com/solana/EVoEhwNhNTsAba6kKNRVV1Bovzbs8XapMCncv8CeMrcv" target="_blank" rel="noopener noreferrer">
+                <a href="https://dexscreener.com/solana/gqqdgfkn7bcsubqzek9ombkqcv1brxvpmtls3sq9pump" target="_blank" rel="noopener noreferrer">
                   <TrendingUp className="mr-2 h-5 w-5" />
                   Trade $PEPONK on DEX
                 </a>
@@ -65,6 +65,11 @@ const Hero = () => {
             </div>
           </div>
         </div>
+
+      {/* Wavy divider bottom */}
+      <svg className="absolute bottom-0 w-full h-8 sm:h-20" preserveAspectRatio="none" viewBox="0 0 1440 80">
+        <path fill="hsl(var(--background))" d="M0,0 C240,54 480,54 720,27 C960,0 1200,0 1440,27 L1440,80 L0,80 Z" />
+      </svg>
       </section>
     );
   };

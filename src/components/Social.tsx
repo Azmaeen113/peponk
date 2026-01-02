@@ -26,7 +26,7 @@ const Social = () => {
       // More vibrant green - increased saturation
       color: "hsl(102, 85%, 65%)", // Bright vibrant lime green
       cta: "Track Stats",
-      link: "https://dexscreener.com/solana/evoehwnhntsaba6kknrvv1bovzbs8xapmcncv8cemrcv",
+      link: "https://dexscreener.com/solana/gqqdgfkn7bcsubqzek9ombkqcv1brxvpmtls3sq9pump",
     },
     {
       name: "GitHub",
